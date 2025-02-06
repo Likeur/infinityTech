@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,10 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
-    <section class="h-screen flex justify-center items-center">
-      <h1 class="text-3xl">Infinity tech</h1>
-    </section>
+  <body class="w-screen overflow-x-hidden text-zinc-800">
+    <!-- Le header plus la navigation mobile et pc -->
+    <header
+      id="header"
+      class="fixed w-screen left-0 z-50 bg-white/80 backdrop-blur-2xl right-0 group p-3 px-8 border-b border-zinc-950/5"
+    >
+      <nav class="flex items-center justify-between">
+        <!-- logo officiel du site -->
+        <div class="">
+          <a href="" class="text-xl">
+            <span>infinity</span>
+          </a>
+        </div>
+
+        <!-- Menu mobile -->
+        <ul
+          id="menumobile"
+          class="fixed scale-y-0 border-b border-zinc-950/10 opacity-0 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100 lg:hidden overflow-hidden bg-white/80 backdrop-blur-3xl z-50 left-0 right-0 duration-300 top-16 p-8 flex flex-col w-screen"
+        >
+          <li>
+            <a href="" class="text-lg flex hover:text-blue-600 duration-300"
+              >Articles</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg mt-3 flex hover:text-blue-600 duration-300"
+              >A propos</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg mt-3 flex hover:text-blue-600 duration-300"
+              >Contact</a
+            >
+          </li>
+
+          <!-- Btn action -->
+          <li class="w-full mt-6 border-t border-zinc-950/10 pt-4">
+            <div class="flex flex-col gap-4 lg:flex-row w-full items-center">
+              <a
+                href="#"
+                class="p-2 hover:bg-zinc-100 duration-300 rounded-full active:scale-90 w-full justify-center flex"
+              >
+                Sign up
+              </a>
+              <a
+                href="#"
+                class="p-2 hover:bg-blue-500 duration-300 active:scale-90 active:bg-blue-800 w-full justify-center flex rounded-full bg-blue-600 text-white"
+              >
+                <span>Log in</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-2">
+          <!-- Menu ordinateur -->
+          <ul
+            class="hidden overflow-hidden lg:flex lg:items-center *:hover:text-blue-600 *:duration-300 lg:gap-4 pr-4"
+          >
+            <li><a href="">Articles</a></li>
+            <li><a href="">A propos</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+
+          <div class="w-0.5 hidden lg:flex h-6 bg-zinc-300 rounded-full"></div>
+          <!-- Btn action -->
+          <div class="lg:flex hidden pl-2 flex-col gap-4 lg:flex-row items-center">
+            <a
+              href="#"
+              class="p-1 px-6 hover:bg-zinc-100 duration-300 rounded-full active:scale-90"
+            >
+              Sign up
+            </a>
+            <a
+              href="#"
+              class="p-1 px-6 hover:bg-blue-500 duration-300 active:scale-90 active:bg-blue-800 rounded-full bg-blue-600 text-white"
+            >
+              <span>Log in</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- umburger menu -->
+        <div class="flex lg:hidden">
+          <button
+            id="menu-btn"
+            aria-label="open menu"
+            class="btn variant-ghost sz-md icon-only relative z-20 -mr-2.5 block cursor-pointer lg:hidden hover:bg-zinc-950/5 p-2 rounded-full"
+          >
+            <svg
+              class="text-title m-auto size-6 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-180 group-data-[state=active]:scale-0 group-data-[state=active]:opacity-0"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 9h16.5m-16.5 6.75h16.5"
+              ></path>
+            </svg>
+            <svg
+              class="text-title absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="relative z-30">
+      <!-- Le contenue principal ici -->
+
+      <!-- La hero section ici -->
+      <section class="h-[100vh] grid place-content-center">
+        <h1>Infinity</h1>
+      </section>
+
+      <!-- A propos de nous  -->
+      <section class="h-[100vh]"></section>
+    </main>
+    <!-- Le footer de la page -->
+    <footer></footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
