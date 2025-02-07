@@ -23,20 +23,22 @@
 					id="menumobile"
 					class="fixed scale-y-0 border-b border-zinc-950/10 dark:border-white/5 opacity-0 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100 lg:hidden overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300 top-16 p-8 flex flex-col w-screen">
 					<li>
-						<a href="" class="text-lg flex hover:text-blue-600 duration-300"
+						<a
+							href="./src/pages/articles.html"
+							class="text-lg flex hover:text-blue-600 duration-300"
 							>Articles</a
 						>
 					</li>
 					<li>
 						<a
-							href=""
+							href="./src/pages/about.html"
 							class="text-lg mt-3 flex hover:text-blue-600 duration-300"
 							>A propos</a
 						>
 					</li>
 					<li>
 						<a
-							href=""
+							href="./src/pages/contact.html"
 							class="text-lg mt-3 flex hover:text-blue-600 duration-300"
 							>Contact</a
 						>
@@ -65,9 +67,9 @@
 						<!-- Menu ordinateur -->
 						<ul
 							class="hidden overflow-hidden lg:flex lg:items-center *:hover:text-blue-600 *:duration-300 lg:gap-4 pr-4">
-							<li><a href="">Articles</a></li>
-							<li><a href="">A propos</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a href="./src/pages/articles.html">Articles</a></li>
+							<li><a href="./src/pages/about.html">A propos</a></li>
+							<li><a href="./src/pages/contact.html">Contact</a></li>
 						</ul>
 
 						<div
@@ -152,16 +154,18 @@
 				</div>
 			</nav>
 		</header>
-		<main class="container mx-auto px-4 py-8">
-			<article class="mb-8 mx-[70%]">
+
+		<main class="container mx-auto px-4 py-24">
+			<!-- contenus de l'article -->
+			<article class="mb-8 max-w-3xl mx-auto">
 				<h1 class="text-3xl font-bold mb-2">
 					The Impact of Technology on the Workplace: How Technology is Changing
 				</h1>
 				<p class="text-sm text-gray-600 mb-4">By John Doe - July 15, 2023</p>
 				<img
-					src="./hero-img-1.webp"
+					src="../assets/hero-img-1.webp"
 					alt="Technology in the workplace"
-					class="w-full h-64 object-cover mb-4" />
+					class="w-full h-64 object-cover mb-4 rounded-lg" />
 
 				<p class="mb-4">
 					Traveling is an enriching experience that opens up new horizons,
@@ -226,9 +230,9 @@
 				</p>
 
 				<img
-					src="./hero-img-1.webp"
+					src="../assets/hero-img-1.webp"
 					alt="Packing Tips"
-					class="w-full h-98 object-cover mb-4" />
+					class="w-full h-98 object-cover mb-4 rounded-lg" />
 
 				<h2 class="text-2xl font-bold mb-2 mt-4">Stay Safe and Healthy</h2>
 				<p class="mb-4">
