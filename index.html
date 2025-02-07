@@ -7,18 +7,22 @@
     <title>Vite App</title>
   </head>
   <body
-    class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950"
+    class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950 relative"
   >
+    <div
+      class="fixed hidden lg:block lg:dark:block bg-gradient-to-b dark:from-blue-600 dark:via-blue-900/50 to-transparent blur-3xl size-[60rem] lg:left-[15%] rounded-full lg:-top-[90%] z-0"
+    ></div>
     <!-- Le header plus la navigation mobile et pc -->
     <header
       id="header"
-      class="fixed w-screen left-0 z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-2xl right-0 group p-3 px-8 border-b border-zinc-950/5 dark:border-white/5 duration-300"
+      class="fixed w-screen left-0 z-50 bg-white/80 lg:bg-transparent dark:bg-zinc-950/80 lg:dark:bg-transparent backdrop-blur-2xl lg:backdrop-blur-none right-0 group p-3 lg:p-5 px-8 border-b lg:border-none lg:w-[75vw] lg:mx-auto border-zinc-950/5 dark:border-white/5 duration-300"
     >
       <nav class="flex items-center justify-between">
         <!-- logo officiel du site -->
         <div class="">
-          <a href="" class="text-xl">
-            <span>infinity</span>
+          <a href="" class="text-lg font-light">
+            <span class="">infinity</span>
+            <span class="text-blue-700 font-semibold">Tech</span>
           </a>
         </div>
 
@@ -48,7 +52,9 @@
           </li>
 
           <!-- Btn action -->
-          <li class="w-full mt-6 border-t border-zinc-950/10 dark:border-white/5 pt-4">
+          <li
+            class="w-full mt-6 border-t border-zinc-950/10 dark:border-white/5 pt-4"
+          >
             <div class="flex flex-col gap-4 lg:flex-row w-full items-center">
               <a
                 href="#"
@@ -76,10 +82,12 @@
               <li><a href="">A propos</a></li>
               <li><a href="">Contact</a></li>
             </ul>
-  
-            <div class="w-0.5 hidden lg:flex h-6 bg-zinc-300 rounded-full"></div>
 
-            <button id="toggleButton" class="p-2 pl-4  hover:cursor-pointer">
+            <div
+              class="w-0.5 hidden lg:flex h-6 bg-zinc-300 rounded-full"
+            ></div>
+
+            <button id="toggleButton" class="p-2 pl-4 hover:cursor-pointer">
               <svg
                 id="moonIcon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +103,7 @@
                   d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
                 />
               </svg>
-  
+
               <svg
                 id="sunIcon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,9 +121,7 @@
               </svg>
             </button>
             <!-- Btn action -->
-            <div
-              class="lg:flex hidden flex-col gap-4 lg:flex-row items-center"
-            >
+            <div class="lg:flex hidden flex-col gap-4 lg:flex-row items-center">
               <a
                 href="#"
                 class="p-1 px-6 dark:text-zinc-200 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 duration-300 rounded-full active:scale-90"
@@ -129,10 +135,8 @@
                 <span>Log in</span>
               </a>
             </div>
-  
-            
           </div>
-  
+
           <!-- umburger menu -->
           <div class="flex lg:hidden">
             <button
@@ -171,15 +175,30 @@
             </button>
           </div>
         </div>
-        
       </nav>
     </header>
+
+    <!-- Contenue du site ici -->
     <main class="relative z-30">
       <!-- Le contenue principal ici -->
 
       <!-- La hero section ici -->
       <section class="h-[100vh] grid place-content-center">
-        <h1>Infinity</h1>
+        <div>
+          <h1 class="text-2xl lg:text-6xl text-center font-semibold bg-gradient-to-bl from-zinc-800 to-zinc-950 dark:from-blue-100 dark:to-blue-50 bg-clip-text text-transparent">
+            Des articles de blog <br />
+            Pour les passionnés de la tech
+          </h1>
+          <p class="mt-8 text-zinc-500 lg:w-[50vw] text-center mx-auto text-balance">
+            Fait ta veille technologique avec nos articles qui sont tendance et
+            touche à tous les categories tech allant du développement logicielle
+            à l'IA
+          </p>
+          <!-- Action btn box  -->
+          <div>
+             
+          </div>
+        </div>
       </section>
 
       <!-- A propos de nous  -->
