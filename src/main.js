@@ -1,4 +1,4 @@
-import './style.css';
+import './style.css'; 
 
 const mainHeader = document.querySelector("#header");
 const menuBtn = document.querySelector("#menu-btn");
