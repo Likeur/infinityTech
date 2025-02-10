@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Displaying a single article</title>
+		<link rel="stylesheet" href="/src/style.css">
 	</head>
 	<body
 		class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950 relative">
@@ -32,7 +33,7 @@
 						>
 					</li>
 					<li>
-						<a href="/pages/displayarticle.html" class="text-lg flex mt-3 hover:text-blue-600 duration-300"
+						<a href="/src/pages/displayarticle.html" class="text-lg flex mt-3 hover:text-blue-600 duration-300"
 						  >Single post</a
 						>
 					  </li>
@@ -69,6 +70,7 @@
 					</li>
 				</ul>
 
+				<!-- Menu pc -->
 				<div class="flex items-center gap-2">
 					<div class="flex items-center gap-2">
 						<!-- Menu ordinateur -->
@@ -76,7 +78,7 @@
 							class="hidden overflow-hidden lg:flex lg:items-center *:hover:text-blue-600 *:duration-300 lg:gap-4 pr-4">
 							<li><a href="">Articles</a></li>
 							<li>
-								<a href="/pages/displayarticle.html" 
+								<a href="/src/pages/displayarticle.html" 
 								  >Single post</a
 								>
 							  </li>
@@ -166,7 +168,7 @@
 				</div>
 			</nav>
 		</header>
-		<main class="container mx-auto px-4 py-24 dark:bg-gray-900 dark:text-white">
+		<main class="container mx-auto px-4 py-24 dark:text-white">
 			<!-- contenus de l'article -->
 			<article class="mb-8 max-w-3xl mx-auto dark:border-gray-700">
 				<h1 class="text-3xl font-bold mb-2 dark:text-gray-100">
@@ -176,7 +178,7 @@
 					By John Doe - July 15, 2023
 				</p>
 				<img
-					src="../assets/hero-img-1.webp"
+					src="/assets/hero-img-1.webp"
 					alt="Technology in the workplace"
 					class="w-full h-98 object-cover mb-4 rounded-lg dark:border-gray-700" />
 				<p class="mb-4 dark:text-gray-300">
@@ -241,7 +243,7 @@
 					packing organizers to maximize space and minimize wrinkles.
 				</p>
 				<img
-					src="../assets/hero-img-1.webp"
+					src="/assets/hero-img-1.webp"
 					alt="Packing Tips"
 					class="w-full h-98 object-cover mb-4 rounded-lg dark:border-gray-700" />
 				<h2 class="text-2xl font-bold mb-2 mt-4 dark:text-gray-100">
@@ -291,6 +293,6 @@
 		<!-- Le footer de la page -->
 		<footer></footer>
 
-		<script type="module" src="../../src/main.js"></script>
+		<script type="module" src="/src/main.js"></script>
 	</body>
 </html>
