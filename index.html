@@ -189,25 +189,33 @@
     </header>
 
     <!-- Contenue du site ici -->
-    <main class="relative z-30">
+    <main class="relative z-30 lg:w-[85vw] lg:mx-auto">
       <!-- Le contenue principal ici -->
 
       <!-- La hero section ici -->
-      <section class="h-[100vh] grid place-content-center">
-        <div>
-          <h1 class="text-2xl lg:text-6xl text-center font-semibold bg-gradient-to-bl from-zinc-800 to-zinc-950 dark:from-blue-100 dark:to-blue-50 bg-clip-text text-transparent">
-            Des articles de blog <br />
+      <section class="h-max lg:h-[100vh] p-5 lg:p-0 grid lg:grid-cols-2 mb-20 gap-10 items-center">
+        <div class="flex flex-col justify-start items-start mt-20 lg:mt-0">
+          <h1 class="text-3xl lg:text-6xl text-center lg:text-left font-semibold bg-gradient-to-bl from-zinc-800 to-zinc-950 text-balance dark:from-blue-100 dark:to-blue-50 bg-clip-text text-transparent">
+            Des articles
             Pour les passionnés de la tech
           </h1>
-          <p class="mt-8 text-zinc-500 lg:w-[50vw] text-center mx-auto text-balance">
+          <p class="mt-8 text-zinc-500 lg:w-[50vw] text-center lg:text-left mx-auto text-balance">
             Fait ta veille technologique avec nos articles qui sont tendance et
             touche à tous les categories tech allant du développement logicielle
             à l'IA
           </p>
           <!-- Action btn box  -->
-          <div>
-             
+          <div class="flex flex-col w-full lg:flex-row items-center gap-5 mt-10 justify-center">
+            <a href="" class="p-2 bg-blue-600 hover:bg-blue-500 ring-1 ring-white/10 text-white rounded-full hover:shadow-lg w-full lg:w-max px-10 border border-white/5 flex justify-center duration-300 hover:shadow-blue-500/30">
+              <span>Voir tous les articles</span>
+            </a>
+            <a href="" class="p-2 flex items-center justify-center px-10 hover:bg-white/10 rounded-full duration-300 w-full lg:w-max">
+              <span>En savoir plus</span>
+            </a>
           </div>
+        </div>
+        <div class="h-[60vh] lg:h-[70vh] rounded-3xl w-full bg-zinc-950/5 dark:bg-white/5 ring-2 ring-white/10">
+
         </div>
       </section>
 
