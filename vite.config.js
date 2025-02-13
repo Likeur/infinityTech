@@ -16,6 +16,7 @@ export default defineConfig({
             displayarticle: resolve(__dirname, 'src/pages/displayarticle.html'),
             profil: resolve(__dirname, 'src/pages/profil-info.html'),
             contact: resolve(__dirname, 'src/pages/contact.html'),
+            login: resolve(__dirname, 'src/pages/login.html'),
         },
     },
 },
