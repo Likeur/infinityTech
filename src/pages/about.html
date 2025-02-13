@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/src/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <body
@@ -169,11 +170,268 @@
 				</div>
 			</nav>
 		</header>
-		<main class="container mx-auto px-4 py-24 dark:text-white">
-			<h1>About here</h1>
+		<main class="container mx-auto px-10 py-24 dark:text-white">
+			<div class="py-10 flex flex-col items-center justify-center">
+				<h1 class="text-4xl lg:text-7xl dark:text-white font-bold">A propos  <span class="text-blue-700 m-1">de nous</span></h1>
+				<p class="text-sm xl:text-xl opacity-45">Welcome to our development blog!</p>
+			</div>	
+			<div class="flex flex-col lg:flex-row md:flex-row  gap-10">
+				<!--div image -->
+				<div class="bg-red-500 w-[80vw] h-[30vh] sm::w-[100vw] sm:h-[30vh] md:w-[80vw] md:h-[30vh] xl:h-[80vh]  rounded-lg overflow-hidden border-l-8 border-l-blue-700">
+					<img class="w-full h-full object-cover hover:scale-105 duration-500" src="/assets/hero-img-1.webp" alt="">
+				</div>
+				<!-- image fin-->
+				<div class="w-[80vw] p-5">
+					<div class="flex-col">
+						<h2 class="text-4xl font-bold lg:text-5xl">INFINITY-TECH</h2>
+						<p class="text-sm text-justify opacity-75 font-serif mt-2 lg:text-xl">We are a team of passionate developers dedicated to sharing our knowledge and insights on software development. Our goal is to create a space where we can explore the latest technologies, best practices, and coding techniques. Whether you're a beginner or an experienced developer, we aim to provide valuable content that helps you grow and succeed in your coding journey. Join us as we dive into the world of programming!</p>
+						<button class="dark:text-black bg-blue-800  px-4 py-2 lg:py-4 lg:px-10 text-white mt-2 rounded-full dark:bg-white lg:mt-10">Contact us</button>
+					</div>
+				</div>
+			</div>
+			<div class="w-full h-[15vh] md:h-[20vh] xl:h-[30vh] rounded-lg py-10 mt-8 flex items-center justify-center  px-20 dark:bg-amber-50/5 text-white dark:text-black bg-blue-800 shadow-md shadow-blue-800">
+				<div class="flex gap-5 md:gap-30 sm:gap-10 px-10 lg:gap-60 dark:text-white">
+					<span class="flex flex-col items-center">
+						<h1 class="font-bold text-xl lg:text-3xl md:text-4xl">Nombre</h1>
+						<h1 class="font-bold text-xl lg:text-3xl md:text-4xl">+7</h1>
+					</span>
+					<span class="flex flex-col items-center">
+						<h1 class="font-bold text-xl lg:text-3xl md:text-4xl">Reseaux</h1>
+						<h1 class="font-bold text-xl lg:text-3xl md:text-4xl">+743</h1>
+					</span>
+					<span class="flex flex-col items-center">
+						<h1 class="font-bold text-xl lg:text-3xl md:text-4xl">Projets</h1>
+						<h1 class="font-bold text-xl lg:text-3xl md:text-4xl">+10</h1>
+					</span>
+				</div>
+			</div>
+			<div class="py-10">
+			 	<h1 class="flex justify-center text-4xl dark:text-white font-bold md:text-5xl">Team <span class="text-blue-700 ml-2"> Members</span></h1>
+			 	<span class="flex flex-col items-center text-sm opacity-45 md:text-2xl">
+				<p class="text-sm lg:text-2xl">Sit amet consectetur adipisicing elit. Voluptates</p>
+			</div> 
+			<!-- info menbres 1 -->	
+			 <div class="flex justify-center items-center flex-col xl:flex-row xl:gap-20">
+				<!-- cart1 -->
+				<div class="flex flex-col items-center">
+					<div class="w-[80vw] h-[40vh]  sm:w-[60vw] sm:h-[60vh] md:w-[60vw] md:h-[50vh] xl:w-[25vw] xl:h-[60vh] rounded-3xl overflow-hidden  border-blue-700 dark:border-white border-4"><img class="w-full h-full object-cover hover:scale-105 duration-300" src="/public/assets/JulesM.png" alt=""></div>
+					<span class="flex-col flex mt-8 items-center">
+						<h1 class="text-xl md:text-5xl xl:text-3xl">Jules <span class="ml-1.5 text-amber-800">Mj</span></h1>
+						<span class="flex flex-col items-center ">
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Devellopeur web </p>
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Front-end</p>
+						</span>
+					</span>
+					<span class="flex justify-center mt-2 gap-1 border-t-blue-700 border-t-4 py-5">
+						<i class='bx bxl-instagram-alt xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-facebook xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-twitter xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-linkedin-square xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bx-link xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+					</span>
+				</div>
+				<!-- cart1 fin -->
+				<!-- cart2 -->
+				<div class="flex flex-col items-center">
+					<div class="w-[80vw] h-[40vh] sm:w-[60vw] sm:h-[60vh] md:w-[60vw] md:h-[50vh] xl:w-[25vw] xl:h-[60vh] rounded-3xl overflow-hidden  border-blue-700 dark:border-white border-4"><img class="w-full h-full object-cover hover:scale-105 duration-300" src="/public/assets/kevin vk off.jpg" alt=""></div>
+					<span class="flex-col flex mt-8 items-center">
+						<h1 class="text-xl md:text-5xl xl:text-3xl">kevin <span class="ml-1.5 text-amber-800">vk off</span></h1>
+						<span class="flex flex-col items-center">
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Devellopeur web</p>
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Beatmaker </p>
+						</span>
+					</span>
+					<span class="flex justify-center mt-2 gap-1 border-t-blue-700 border-t-4  py-5">
+						<i class='bx bxl-instagram-alt xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-facebook xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-twitter xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-linkedin-square xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bx-link xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+					</span>
+				</div>
+				<!-- cart2 fin -->
+				 <!-- cart2 -->
+				<div class="flex flex-col items-center">
+					<div class="w-[80vw] h-[40vh] sm:w-[60vw] sm:h-[60vh] md:w-[60vw] md:h-[50vh] xl:w-[25vw] xl:h-[60vh] rounded-3xl overflow-hidden  border-blue-700 dark:border-white border-4"><img class="w-full h-full object-cover hover:scale-105 duration-300" src="/public/assets/like.jpeg" alt=""></div>
+					<span class="flex-col flex mt-8 items-center">
+						<h1 class="text-xl md:text-5xl xl:text-3xl">Likeur <span class="ml-1.5 text-amber-800">off</span></h1>
+						<span class="flex flex-col items-center">
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Dev Front-end</p>
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Graphiste web design</p>
+						</span>
+					</span>
+					<span class="flex justify-center mt-2 gap-1 border-t-blue-700 border-t-4  py-5">
+						<i class='bx bxl-instagram-alt xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-facebook xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-twitter xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-linkedin-square xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bx-link xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+					</span>
+				</div>
+				<!-- cart2 fin -->	 		
+			 </div>
+			<!-- info menbres 2 -->	
+			<div class="flex justify-center items-center flex-col xl:flex-row xl:gap-20">
+				<!-- cart1 -->
+				<div class="flex flex-col items-center">
+					<div class="w-[80vw] h-[40vh]  sm:w-[60vw] sm:h-[60vh] md:w-[60vw] md:h-[50vh] xl:w-[25vw] xl:h-[60vh] rounded-3xl overflow-hidden  border-blue-700 dark:border-white border-4"><img class="w-full h-full object-cover hover:scale-105 duration-300" src="/public/assets/Erickay.jpeg" alt=""></div>
+					<span class="flex-col flex mt-8 items-center">
+						<h1 class="text-xl md:text-5xl xl:text-3xl">Erickay <span class="ml-1.5 text-amber-800"></span></h1>
+						<span class="flex flex-col items-center ">
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Devellopeur</p>
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Front-end</p>
+						</span>
+					</span>
+					<span class="flex justify-center mt-2 gap-1 border-t-blue-700 border-t-4 py-5">
+						<i class='bx bxl-instagram-alt xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-facebook xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-twitter xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-linkedin-square xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bx-link xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+					</span>
+				</div>
+				<!-- cart1 fin -->
+				<!-- cart2 -->
+				<div class="flex flex-col items-center">
+					<div class="w-[80vw] h-[40vh] sm:w-[60vw] sm:h-[60vh] md:w-[60vw] md:h-[50vh] xl:w-[25vw] xl:h-[60vh] rounded-3xl overflow-hidden  border-blue-700 dark:border-white border-4"><img class="w-full h-full object-cover hover:scale-105 duration-500" src="/public/assets/ges.jpeg" alt=""></div>
+					<span class="flex-col flex mt-8 items-center">
+						<h1 class="text-xl md:text-5xl xl:text-3xl">New Ges <span class="ml-1.5 text-amber-800">CP</span></h1>
+						<span class="flex flex-col items-center">
+							<p class="text-2xl text-blue-700  md:text-sm xl:text-sm">Devellopeur web</p>
+							<p class="text-2xl text-blue-700  md:text-sm xl:text-sm">et Geme</p>
+						</span>
+					</span>
+					<span class="flex justify-center mt-2 gap-1 border-t-blue-700 border-t-4 py-5">
+						<i class='bx bxl-instagram-alt xl:text-2xl text-sm hover:text-blue-700'></i>
+						<i class='bx bxl-facebook xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-twitter xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-linkedin-square xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bx-link xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+					</span>
+				</div>
+				<!-- cart2 fin -->
+				 <!-- cart2 -->
+				<div class="flex flex-col items-center">
+					<div class="w-[80vw] h-[40vh] sm:w-[60vw] sm:h-[60vh] md:w-[60vw] md:h-[50vh] xl:w-[25vw] xl:h-[60vh] rounded-3xl overflow-hidden  border-blue-700 dark:border-white border-4"><img class="w-full h-full object-cover hover:scale-105 duration-300 " src="/public/assets/sier.jpeg" alt=""></div>
+					<span class="flex-col flex mt-8 items-center">
+						<h1 class="text-xl md:text-5xl xl:text-3xl">Sierra <span class="ml-1.5 text-amber-800">sam</span></h1>
+						<span class="flex flex-col items-center">
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Devellopeur </p>
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">web</p>
+						</span>
+					</span>
+					<span class="flex justify-center mt-2 gap-1 border-t-blue-700 border-t-4 py-5">
+						<i class='bx bxl-instagram-alt xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-facebook xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-twitter xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-linkedin-square xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+					</span>
+				</div>
+				<!-- cart2 fin -->	 		
+			 </div> 
+			 <div class="flex justify-center">
+				<div class="flex flex-col items-center">
+					<div class="w-[80vw] h-[40vh] sm:w-[60vw] sm:h-[60vh] md:w-[60vw] md:h-[50vh] xl:w-[25vw] xl:h-[60vh] rounded-3xl overflow-hidden  border-blue-700 dark:border-white border-4"><img class="w-full h-full object-cover hover:scale-105 duration-300" src="/public/assets/sem sem.jpeg" alt=""></div>
+					<span class="flex-col flex mt-8 items-center">
+						<h1 class="text-xl md:text-5xl xl:text-3xl">Sem <span class="ml-1.5 text-amber-800">kansele</span></h1>
+						<span class="flex flex-col items-center">
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Devellopeur web</p>
+							<p class="text-2xl text-blue-700 md:text-sm xl:text-sm">Front-end</p>
+						</span>
+					</span>
+					<span class="flex justify-center mt-2 gap-1 border-t-blue-700 border-t-4 py-5">
+						<i class='bx bxl-instagram-alt xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-facebook xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-twitter xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bxl-linkedin-square xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+						<i class='bx bx-link xl:text-2xl text-sm hover:text-blue-700 duration-200'></i>
+					</span>
+				</div>
+			</div>	
 		</main>
 		<!-- Le footer de la page -->
-		<footer></footer>
+		<footer class="footer py-8 dark:bg-zinc-900 bg-zinc-100">
+			<div class="container mx-auto px-4 mt-4">
+			    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+				  <div>
+					<h4 class="font-bold mb-4">À propos</h4>
+					<p class="text-gray-500">INFINITY-TECH est en train de venir en vigeur. !😎<br>L'obectif ici est de mettre a jour la connaissance a tous, dans tout les domaine multidsciplainaire de la vie liee a la Technologie</p>
+					<div class="mt-4">
+					  <div><span class="font-[1000]">Email :</span>  <a class="text-gray-500" href="mailto:info@gmailcom">info@gmailcom</a></div>
+					  <div><span class="font-[1000]">Phone :</span>  <a  class="text-gray-500" href="tel:+243 822717275">+243 822717275</a></div>
+					</div>
+				  </div>
+				  <div>
+					<h4 class="font-bold mb-4">Liens rapides</h4>
+					<ul class="text-gray-500">
+					    <li><a href="#">Accueil</a></li>
+					    <li><a href="#">À propos</a></li>
+					    <li><a href="#">Blog</a></li>
+					    <li><a href="#">Archives</a></li>
+					    <li><a href="#">Auteur</a></li>
+					    <li><a href="#">Contact</a></li>
+					</ul>
+				  </div>
+				  <div>
+					<h4 class="font-bold mb-4">Catégories</h4>
+					<ul class="text-gray-500">
+					    <li><a href="#">Lifestyle</a></li>
+					    <li><a href="#">Technologie</a></li>
+					    <li><a href="#">Voyage</a></li>
+					    <li><a href="#">Business</a></li>
+					    <li><a href="#">Économie</a></li>
+					    <li><a href="#">Sports</a></li>
+					</ul>
+				  </div>
+				  <div class="bg-white dark:bg-zinc-950 p-5 rounded-lg">
+					<h4 class="font-bold mb-4 text-center">Newsletter</h4>
+					<p class="text-center mb-4 text-gray-400">Recevez les articles de blog et les offres par e-mail.</p>
+					<div class="contact-form">
+					    <!-- <input type="email" placeholder="Votre e-mail">
+					    <button type="submit">S'abonner</button> -->
+					    <form action="" class="flex flex-col">
+						<input type="email" class="w-full px-4 py-2 mb-2 rounded-mg dark:bg-gray-900 text-black rounded-lg outline-1 outline-slate-500 pl-3 focus:outline-none dark:text-gray-300" placeholder="Votre e-mail"><ion-icon class="absolute right-45 mt-2.5 transform-y-1/2 w-5 h-5 text-zinc-500" name="mail-outline"></ion-icon>
+						<button type="submit" class="bg-blue-500 py-2 rounded-lg text-white">S'abonner</button>
+					    </form>
+					</div>
+				  </div>
+			    </div>
+		  
+			    <hr class="my-8 border-gray-600">
+		  
+			    <div class="flex justify-between items-center">
+				  <div>
+					<h4 class="font-bold mb-4">Réseaux sociaux</h4>
+					<ul class="flex space-x-4">
+					    <li>
+						  <a href="https://www.facebook.com/" target="_blank">
+							<ion-icon name="logo-facebook"></ion-icon>
+						  </a>
+					    </li>
+					    <li>
+						  <a href="https://www.twitter.com/" target="_blank">
+							<ion-icon name="logo-twitter"></ion-icon>
+						  </a>
+					    </li>
+					    <li>
+						  <a href="https://www.instagram.com/" target="_blank">
+							<ion-icon name="logo-instagram"></ion-icon>
+						  </a>
+					    </li>
+					    <li>
+						  <a href="https://www.linkedin.com/" target="_blank">
+							<ion-icon name="logo-linkedin"></ion-icon>
+						  </a>
+					    </li>
+					</ul>
+				  </div>
+				  <div>
+					<p>&copy; 2025 INFINITY-TECH. Tous droits réservés.</p>
+				  </div>
+			    </div>
+			</div>
+		  </footer>
+		
 
 		<script type="module" src="/src/main.js"></script>
 	</body>
