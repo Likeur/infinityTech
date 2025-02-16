@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contact Page</title>
-		<link rel="stylesheet" href="/src/style.css">
+		<link rel="stylesheet" href="/src/style.css" />
 	</head>
 	<body
 		class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950 relative">
@@ -33,10 +33,12 @@
 						>
 					</li>
 					<li>
-						<a href="/src/pages/displayarticle.html" class="text-lg flex mt-3 hover:text-blue-600 duration-300"
-						  >Single post</a
+						<a
+							href="/src/pages/displayarticle.html"
+							class="text-lg flex mt-3 hover:text-blue-600 duration-300"
+							>Single post</a
 						>
-					  </li>
+					</li>
 					<li>
 						<a
 							href=""
@@ -78,10 +80,8 @@
 							class="hidden overflow-hidden lg:flex lg:items-center *:hover:text-blue-600 *:duration-300 lg:gap-4 pr-4">
 							<li><a href="">Articles</a></li>
 							<li>
-								<a href="/src/pages/displayarticle.html" 
-								  >Single post</a
-								>
-							  </li>
+								<a href="/src/pages/displayarticle.html">Single post</a>
+							</li>
 							<li><a href="">A propos</a></li>
 							<li><a href="">Contact</a></li>
 						</ul>
@@ -169,30 +169,204 @@
 			</nav>
 		</header>
 
-		<main class="container mx-auto px-4 py-24 dark:text-white">
-
+		<main class="pt-24 dark:text-white">
 			<!-- Ton code start here -->
-            <!-- Profil info -->
-			<section class="h-[100vh]">
-				<h1>Contact page</h1>
-			</section>
+			<section class="container mx-auto">
+				<div class="grid md:grid-cols-4 gap-5 p-5 items-center">
+					<div class="col-span-3">
+						<p
+							class="mb-3 text-zinc-600 dark:text-zinc-600 text-sm font-medium uppercase">
+							Commencer
+						</p>
+						<h2 class="text-5xl font-bold text-balance">
+							Prenez contact avec nous. <br />
+							Nous sommes là pour vous aider.
+						</h2>
+					</div>
+					<div
+						class="flex md:flex-col gap-5 justify-end items-end md:mt-0 mt-5">
+						<div
+							class="flex justify-center items-center border border-zinc-300 w-10 h-10 rounded-full">
+							<a
+								href="https://www.facebook.com/"
+								target="_blank"
+								class="text-base/0 p-2 hover:text-blue-600 duration-300">
+								<ion-icon name="logo-facebook"></ion-icon>
+							</a>
+						</div>
+						<div
+							class="flex justify-center items-center border border-zinc-300 w-10 h-10 rounded-full">
+							<a
+								href="https://www.instagram.com/"
+								target="_blank"
+								class="text-base/0 p-2 hover:text-blue-600 duration-300">
+								<ion-icon name="logo-instagram"></ion-icon>
+							</a>
+						</div>
+						<div
+							class="flex justify-center items-center border border-zinc-300 w-10 h-10 rounded-full">
+							<a
+								href="https://www.linkedin.com/"
+								target="_blank"
+								class="text-base/0 p-2 hover:text-blue-600 duration-300">
+								<ion-icon name="logo-linkedin"></ion-icon>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Contact Form -->
+				<div class="py-6">
+					<form class="bg-white dark:bg-transparent p-8 w-full">
+						<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+							<div>
+								<label
+									class="block text-zinc-700 dark:text-zinc-300 text-sm font-medium"
+									>Your Name</label
+								>
+								<input
+									type="text"
+									class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2" />
+							</div>
+							<div>
+								<label
+									class="block text-zinc-700 dark:text-zinc-300 text-sm font-medium"
+									>Email Address</label
+								>
+								<input
+									type="email"
+									class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2" />
+							</div>
+							<div>
+								<label
+									class="block text-zinc-700 dark:text-zinc-300 text-sm font-medium"
+									>Phone Number (optional)</label
+								>
+								<input
+									type="text"
+									class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2" />
+							</div>
+						</div>
 
+						<div class="mt-6">
+							<label
+								class="block text-zinc-700 dark:text-zinc-300 text-sm font-medium"
+								>Message</label
+							>
+							<textarea
+								class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 py-2 h-24"></textarea>
+						</div>
+
+						<div class="mt-6">
+							<button
+								class="bg-blue-600 dark:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full w-full md:w-auto hover:bg-blue-500 dark:hover:bg-blue-500 transition duration-300 cursor-pointer">
+								Leave us a Message →
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- Contact infos -->
+			<section
+				class="py-18 bg-[url(../assets/bg_contact_infos.svg)] px-8 md:px-6">
+				<div
+					class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+					<!-- Texte principal -->
+					<div class="md:col-span-1">
+						<h3
+							class="text-zinc-600 dark:text-zinc-600 text-sm font-medium mb-3 uppercase">
+							Contact Info
+						</h3>
+						<h2
+							class="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-900 mt-2 text-balance">
+							We are always happy to assist you
+						</h2>
+					</div>
+
+					<!-- Email -->
+					<div>
+						<h4 class="text-lg font-semibold text-zinc-900 dark:text-zinc-900">
+							Email Address
+						</h4>
+						<div
+							class="w-6 border-t-2 border-zinc-900 dark:border-zinc-900 my-2"></div>
+						<p class="text-zinc-800 dark:text-zinc-600 font-semibold">
+							help@info.com
+						</p>
+						<p class="text-zinc-600 dark:text-zinc-600 text-sm mt-2">
+							Assistance hours: <br />
+							Monday - Friday 6 am to 8 pm EST
+						</p>
+					</div>
+
+					<!-- Phone Number -->
+					<div>
+						<h4 class="text-lg font-semibold text-zinc-900 dark:text-zinc-900">
+							Number
+						</h4>
+						<div
+							class="w-6 border-t-2 border-zinc-900 dark:border-zinc-900 my-2"></div>
+						<p class="text-zinc-800 dark:text-zinc-600 font-semibold">
+							(808) 998-34256
+						</p>
+						<p class="text-zinc-600 dark:text-zinc-600 text-sm mt-2">
+							Assistance hours: <br />
+							Monday - Friday 6 am to 8 pm EST
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- CTA Newsletter -->
+			<section class="bg-blue-600 dark:bg-blue-700 py-20 px-6">
+				<div
+					class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:text-left text-center">
+					<div>
+						<h2 class="text-white text-2xl lg:text-3xl font-bold">
+							S'abonner à notre Newsletter
+						</h2>
+						<p
+							class="text-blue-200 dark:text-blue-300 mt-2 max-w-2xl md:text-balance text-base">
+							Abonnez-vous à notre newsletter : Recevez les actualités tech,
+							tendances, analyses et innovations directement dans votre boîte
+							mail. Ne manquez aucune mise à jour !
+						</p>
+					</div>
+					<!-- Formulaire -->
+					<div class="mt-6 flex justify-center">
+						<div class="relative w-full max-w-lg">
+							<input
+								type="email"
+								placeholder="Enter your email"
+								class="w-full bg-blue-500 dark:bg-blue-600 text-white placeholder-blue-200 py-3 px-4 pr-24 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-400" />
+							<button
+								class="absolute top-1.5 right-1 transform -translate-y-0.5 bg-white text-blue-600 font-semibold px-6 py-2 rounded-full hover:bg-gray-100 transition">
+								Subscribe
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-        
+
 		<!-- Le footer de la page -->
-        <footer class="footer py-8 lg:h-[60vh] dark:bg-zinc-900 bg-zinc-100">
-			<div class="container mx-auto px-4 mt-4 h-full flex flex-col justify-between">
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+		<footer class="footer py-8 lg:h-[60vh] dark:bg-zinc-900 bg-zinc-100">
+			<div
+				class="container mx-auto px-4 mt-4 h-full flex flex-col justify-between">
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
 					<div>
 						<h4 class="font-bold mb-4 text-2xl">
 							<span>InfinityTech</span>
 						</h4>
-						<p class="text-gray-500 text-balance">L'obectif ici est de mettre a jour la connaissance a tous, dans tout les domaine multidsciplainaire de la vie liee a la Technologie</p>
-						
+						<p class="text-gray-500 text-balance">
+							L'obectif ici est de mettre a jour la connaissance a tous, dans
+							tout les domaine multidsciplainaire de la vie liee a la
+							Technologie
+						</p>
 					</div>
 					<div>
 						<h4 class="font-light mb-4">Liens rapides</h4>
-						<ul class="text-gray-500  *:hover:text-blue-600 *:dark:hover:text-white *:duration-300">
+						<ul
+							class="text-gray-500 *:hover:text-blue-600 *:dark:hover:text-white *:duration-300">
 							<li><a href="#">Accueil</a></li>
 							<li><a href="#">À propos</a></li>
 							<li><a href="#">Blog</a></li>
@@ -203,7 +377,8 @@
 					</div>
 					<div>
 						<h4 class="font-light mb-4">Catégories</h4>
-						<ul class="text-gray-500 *:hover:text-blue-600 *:dark:hover:text-white *:duration-300">
+						<ul
+							class="text-gray-500 *:hover:text-blue-600 *:dark:hover:text-white *:duration-300">
 							<li><a href="#">Lifestyle</a></li>
 							<li><a href="#">Technologie</a></li>
 							<li><a href="#">Voyage</a></li>
@@ -214,52 +389,77 @@
 					</div>
 					<div>
 						<div>
-							<div><span class="font-[1000]">Email :</span>  <a class="text-gray-500" href="mailto:info@gmailcom">info@gmailcom</a></div>
-							<div><span class="font-[1000]">Phone :</span>  <a  class="text-gray-500" href="tel:+243 822717275">+243 822717275</a></div>
+							<div>
+								<span class="font-[1000]">Email :</span>
+								<a class="text-gray-500" href="mailto:info@gmailcom"
+									>info@gmailcom</a
+								>
+							</div>
+							<div>
+								<span class="font-[1000]">Phone :</span>
+								<a class="text-gray-500" href="tel:+243 822717275"
+									>+243 822717275</a
+								>
+							</div>
 						</div>
 					</div>
-					
 				</div>
-		
+
 				<div>
-					<hr class="mt-10 border-zinc-950/20 dark:border-zinc-800">
-		
-				<div class="flex pt-4 flex-col lg:flex-row justify-between items-center">
-					<div class="flex flex-col items-center lg:items-start gap-2">
-						<ul class="flex space-x-4 ">
-							<li>
-								<a href="https://www.facebook.com/" target="_blank" class="text-2xl">
-									<ion-icon name="logo-facebook"></ion-icon>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.twitter.com/" target="_blank" class="text-2xl">
-									<ion-icon name="logo-twitter"></ion-icon>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/" target="_blank" class="text-2xl">
-									<ion-icon name="logo-instagram"></ion-icon>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/" target="_blank" class="text-2xl">
-									<ion-icon name="logo-linkedin"></ion-icon>
-								</a>
-							</li>
-						</ul>
+					<hr class="mt-10 border-zinc-950/20 dark:border-zinc-800" />
+
+					<div
+						class="flex pt-4 flex-col lg:flex-row justify-between items-center">
+						<div class="flex flex-col items-center lg:items-start gap-2">
+							<ul class="flex space-x-4">
+								<li>
+									<a
+										href="https://www.facebook.com/"
+										target="_blank"
+										class="text-2xl">
+										<ion-icon name="logo-facebook"></ion-icon>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.twitter.com/"
+										target="_blank"
+										class="text-2xl">
+										<ion-icon name="logo-twitter"></ion-icon>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.instagram.com/"
+										target="_blank"
+										class="text-2xl">
+										<ion-icon name="logo-instagram"></ion-icon>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.linkedin.com/"
+										target="_blank"
+										class="text-2xl">
+										<ion-icon name="logo-linkedin"></ion-icon>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="dark:text-zinc-400">
+							<p>Copyright &copy; 2025 INFINITY-TECH. Tous droits réservés.</p>
+						</div>
 					</div>
-					<div class="dark:text-zinc-400">
-						<p>Copyright &copy; 2025 INFINITY-TECH. Tous droits réservés.</p>
-					</div>
-				</div>
 				</div>
 			</div>
 		</footer>
-      
 
 		<script type="module" src="/src/main.js"></script>
-		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>
