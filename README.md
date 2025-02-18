@@ -1,10 +1,7 @@
 # Infinity Tech
 
 Bienvenue sur **Infinity Tech** !
-Ce projet est un site web collaboratif en HTML et Tailwind CSS dédié au partage des dernières actualités technologiques, tout en offrant un environnement d'apprentissage aux développeurs débutants.
-
-![Aperçu du site](images/template.jpg)  
-_Capture d'écran du template du site_
+Ce projet est un site web collaboratif en HTML et Tailwind CSS pour la communauté infinity tech dédié au partage des dernières actualités technologiques, tout en offrant un environnement d'apprentissage aux développeurs débutants.
 
 
 
@@ -20,23 +17,27 @@ _Capture d'écran du template du site_
 
 - **Interface moderne et responsive** : Un design clair et adaptatif pour une navigation fluide.
 - **Catégories d'actualités** : Organisation des articles en différentes sections (ex. : innovations, gadgets, logiciels, intelligence artificielle, etc.).
-- **Ressources pédagogiques** : Documentation et guides pour aider les débutants à comprendre et à améliorer le code HTML/CSS.
+- **Ressources pédagogiques** : Documentation et guides pour aider les débutants dans leur parcours.
 
 
 ## 🛠️ Technologies Utilisées
 
 - **HTML** : Pour la structure du site.
-- **CSS** : Pour la mise en forme et l'esthétique.
+- **TailwindCSS** : Pour la mise en forme et l'esthétique.
 - **Git & GitHub** : Pour la gestion du code et la collaboration entre contributeurs.
+- **Vite js** : Bundler
+- **Boxicons and heroicons** : for icons
 
 
 
 ## 📥 Installation et Utilisation
 
-### 1️⃣ Cloner le dépôt
+### Faites d'abord un fork du repos
+
+### 1️⃣ Cloner le fork du dépôt
 
 ```bash
-git clone https://github.com/votre-utilisateur/infinityTech.git
+git clone https://github.com/<votre nom utilisateur>/infinityTech.git
 ```
 ### 2 naviguer dans le dossier 
 
