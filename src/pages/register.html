@@ -41,7 +41,7 @@
         <!-- Message "Déjà un compte ?" -->
         <p class="text-center text-sm mt-4">
             Déjà un compte ? 
-            <a href="#" class="text-blue-500 hover:underline hover:text-blue-700">Se connecter</a>
+            <a href="src/pages/login.html" class="text-blue-500 hover:underline hover:text-blue-700">Se connecter</a>
         </p>
     </div>
 
@@ -69,7 +69,7 @@
             if (password.match(/[A-Z]/)) strength++; // Majuscule
             if (password.match(/[0-9]/)) strength++; // Chiffre
             if (password.match(/[@$!%*?&]/)) strength++; // Caractère spécial
-            if (password.length >= 8) strength++; // Longueur minimale
+            if (password.length >= 4) strength++; // Longueur minimale
 
             // Classes de force
             let colors = ["w-0 bg-red-500", "w-1/5 bg-red-500", "w-2/5 bg-orange-500", "w-3/5 bg-yellow-500", "w-4/5 bg-green-500", "w-full bg-green-600"];
@@ -98,7 +98,7 @@
 
             // Vérifier si le mot de passe est "Très fort" (niveau 5/5)
             if (!strengthBar.className.includes("w-full bg-green-600")) {
-                message.innerText = "Votre mot de passe doit être Très fort pour vous inscrire.";
+                message.innerText = "Utilisez les Majuscules, minuscules, chiffres et caractéres spaciaux pour vous inscrire.";
                 message.className = "text-red-500";
                 return;
             }
