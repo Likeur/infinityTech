@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register </title>
+    <link rel="stylesheet" href="/src/style.css">
 </head>
-<body class="flex items-center justify-center h-screen bg-gray-200 ">
+<body class="flex items-center justify-center h-screen bg-gray-100">
 
-    <div class="bg-white p-6 rounded-lg shadow-2xl w-96">
+    <div class="bg-white p-6 rounded-lg shadow-md w-96">
         <h2 class="text-2xl font-bold mb-4 text-center">Register</h2>
         <form id="registreForm" class="space-y-4">
-            <input type="text" id="nom" placeholder="Nom" required class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500">
-            <input type="text" id="prenom" placeholder="Prenom" required class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500">
-            <input type="email" id="email" placeholder="Email" required class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500">
+            <input type="text" id="nom" placeholder="Nom" required 
+                class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none">
+            <input type="text" id="prenom" placeholder="Prenom" required 
+                class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none">
+            <input type="email" id="email" placeholder="Email" required 
+                class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none">
             
             <!-- Champ mot de passe avec affichage -->
             <div class="relative">
                 <input type="password" id="password" placeholder="Mot de passe" required 
-                    class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 pr-10">
+                    class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 outline-none pr-10">
                 <button type="button" id="togglePassword" 
                     class="absolute right-3 top-2 text-gray-500 hover:text-gray-700">
                     👁
@@ -31,9 +34,15 @@
             </div>
             <p id="passwordMessage" class="text-center text-sm"></p>
 
-            <button type="submit" class="w-full bg-blue-700 text-white p-2 rounded hover:bg-gradient-to-t from-blue-500 to-blue-700">S'inscrire</button>
+            <button type="submit" class="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600">S'inscrire</button>
         </form>
         <p id="message" class="text-center mt-4"></p>
+
+        <!-- Message "Déjà un compte ?" -->
+        <p class="text-center text-sm mt-4">
+            Déjà un compte ? 
+            <a href="#" class="text-blue-500 hover:underline hover:text-blue-700">Se connecter</a>
+        </p>
     </div>
 
     <script>
@@ -89,7 +98,7 @@
 
             // Vérifier si le mot de passe est "Très fort" (niveau 5/5)
             if (!strengthBar.className.includes("w-full bg-green-600")) {
-                message.innerText = "Votre mot de passe doit contenir plus de 3 et doit avoir au-moin 8 caractères pour vous inscrire.";
+                message.innerText = "Votre mot de passe doit être Très fort pour vous inscrire.";
                 message.className = "text-red-500";
                 return;
             }
