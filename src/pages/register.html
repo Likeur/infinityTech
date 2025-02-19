@@ -1,14 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register form</title>
+    <title>Register </title>
     <link rel="stylesheet" href="/src/style.css">
 </head>
-<body>
-    
-    <h1 class="text-5xl bg-red-500">register form</h1>
-    <script type="module" src="/src/main.js"></script>
+<body class="flex items-center justify-center h-screen bg-gray-100 dark:text-zinc-100 dark:bg-zinc-950">
+
+    <div class="bg-white p-6 rounded-lg shadow-md w-96">
+        <h2 class="text-2xl font-bold mb-4 text-center">Register</h2>
+        <form id="registreForm" class="space-y-4 dark:shadow-blue-500">
+            <input type="text" id="nom" placeholder="Nom" required 
+            class="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border border-gray-400 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none focus:ring focus:ring-opacity-40 cursor-pointer">
+            <input type="text" id="prenom" placeholder="Prenom" required 
+            class="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border border-gray-400 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none focus:ring focus:ring-opacity-40 cursor-pointer">
+            <input type="email" id="email" placeholder="Email" required 
+            class="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border border-gray-400 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none focus:ring focus:ring-opacity-40 cursor-pointer">
+            
+            <!-- Champ mot de passe avec affichage -->
+            <div class="relative">
+                <input type="password" id="password" placeholder="Mot de passe" required 
+                    class="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border border-gray-400 rounded-md focus:border-blue-500 focus:ring-blue-500 focus:outline-none focus:ring focus:ring-opacity-40  cursor-pointer">
+                <button type="button" id="togglePassword" 
+                    class="absolute right-3 top-4 text-gray-500 hover:text-gray-700">
+                    👁
+                </button>
+            </div>
+
+            <!-- Barre de force du mot de passe -->
+            <div class="h-2 w-full bg-gray-200 rounded overflow-hidden">
+                <div id="passwordStrength" class="h-full w-0 bg-red-500 transition-all"></div>
+            </div>
+            <p id="passwordMessage" class="text-center text-sm"></p>
+
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 cursor-pointer">S'inscrire</button>
+        </form>
+        <p id="message" class="text-center mt-4"></p>
+
+        <!-- Message "Déjà un compte ?" -->
+        <p class="text-center text-sm mt-4">
+            Déjà un compte ? 
+            <a href="src/pages/login.html" class="text-blue-500 hover:underline hover:text-blue-700">Se connecter</a>
+        </p>
+    </div>
+
+    <script>
+        // Afficher/Masquer le mot de passe
+        document.getElementById("togglePassword").addEventListener("click", function() {
+            let passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                this.innerText = "🙈";
+            } else {
+                passwordInput.type = "password";
+                this.innerText = "👁";
+            }
+        });
+
+        // Vérifier la force du mot de passe
+        document.getElementById("password").addEventListener("input", function() {
+            let password = this.value;
+            let strengthBar = document.getElementById("passwordStrength");
+            let message = document.getElementById("passwordMessage");
+
+            let strength = 0;
+            if (password.match(/[a-z]/)) strength++; // Minuscule
+            if (password.match(/[A-Z]/)) strength++; // Majuscule
+            if (password.match(/[0-9]/)) strength++; // Chiffre
+            if (password.match(/[@$!%*?&]/)) strength++; // Caractère spécial
+            if (password.length >= 4) strength++; // Longueur minimale
+
+            // Classes de force
+            let colors = ["w-0 bg-red-500", "w-1/5 bg-red-500", "w-2/5 bg-orange-500", "w-3/5 bg-yellow-500", "w-4/5 bg-green-500", "w-full bg-green-600"];
+            strengthBar.className = `h-full transition-all ${colors[strength]}`;
+
+            let messages = ["Trop faible", "Très faible", "Faible", "Moyen", "Fort", "Très fort"];
+            message.innerText = messages[strength];
+            message.className = "text-center text-sm " + (strength === 5 ? "text-green-500" : "text-red-500");
+        });
+
+        // Validation du formulaire
+        document.getElementById("registreForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let nom = document.getElementById("nom").value;
+            let prenom = document.getElementById("prenom").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let strengthBar = document.getElementById("passwordStrength");
+            let message = document.getElementById("message");
+
+            if (!nom || !prenom || !email || !password) {
+                message.innerText = "Veuillez remplir tous les champs.";
+                message.className = "text-red-500";
+                return;
+            }
+
+            // Vérifier si le mot de passe est "Très fort" (niveau 5/5)
+            if (!strengthBar.className.includes("w-full bg-green-600")) {
+                message.innerText = "Utilisez les Majuscules, minuscules, chiffres et caractéres spaciaux pour vous inscrire.";
+                message.className = "text-red-500";
+                return;
+            }
+
+            message.innerText = "Inscription réussie !";
+            message.className = "text-green-500";
+        });
+    </script>
+
 </body>
 </html>
