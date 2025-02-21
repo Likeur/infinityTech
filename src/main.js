@@ -1,4 +1,23 @@
 import './style.css'; 
+// firebase configs
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDPLp_YW-G7m6Jg9ATkJCEWSANc7hGvPt0",
+  authDomain: "infinitytech-20c7f.firebaseapp.com",
+  projectId: "infinitytech-20c7f",
+  storageBucket: "infinitytech-20c7f.firebasestorage.app",
+  messagingSenderId: "651608228239",
+  appId: "1:651608228239:web:f571aed233721ff9b94bfa",
+  measurementId: "G-XGJ0DN6HQW"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 
 const mainHeader = document.querySelector("#header");
 const menuBtn = document.querySelector("#menu-btn");
