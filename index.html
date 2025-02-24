@@ -32,15 +32,13 @@
           class="fixed scale-y-0 border-b border-zinc-950/10 dark:border-white/5 opacity-0 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100 lg:hidden overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300 top-16 p-8 flex flex-col w-screen"
         >
           <li>
-            <a href="/src/pages/articles.html" class="text-lg flex hover:text-blue-600 duration-300"
+            <a
+              href="/src/pages/articles.html"
+              class="text-lg flex hover:text-blue-600 duration-300"
               >Articles</a
             >
           </li>
-          <li>
-            <a href="/src/pages/displayarticle.html" class="text-lg flex mt-3 hover:text-blue-600 duration-300"
-              >Single post</a
-            >
-          </li>
+
           <li>
             <a
               href="/src/pages/about.html"
@@ -53,11 +51,6 @@
               href="/src/pages/contact.html"
               class="text-lg mt-3 flex hover:text-blue-600 duration-300"
               >Contact</a
-            >
-            <a
-              href="/src/pages/profil-info.html"
-              class="text-lg mt-3 flex hover:text-blue-600 duration-300"
-              >profil</a
             >
           </li>
 
@@ -89,14 +82,8 @@
               class="hidden overflow-hidden lg:flex lg:items-center *:hover:text-blue-600 *:duration-300 lg:gap-4 pr-4"
             >
               <li><a href="/src/pages/articles.html">Articles</a></li>
-              <li>
-                <a href="/src/pages/displayarticle.html"
-                  >Single post</a
-                >
-              </li>
               <li><a href="/src/pages/about.html">A propos</a></li>
               <li><a href="/src/pages/contact.html">Contact</a></li>
-              <li><a href="/src/pages/profil-info.html">profil</a></li>
             </ul>
 
             <div
@@ -199,277 +186,135 @@
       <!-- Le contenue principal ici -->
 
       <!-- La hero section ici -->
-      <section class="h-max lg:h-[100vh] p-5 lg:p-0 grid lg:grid-cols-2 mb-20 gap-10 items-center">
+      <section
+        class="h-max lg:h-[100vh] p-5 lg:p-0 grid lg:grid-cols-2 mb-20 gap-10 items-center"
+      >
         <div class="flex flex-col justify-start items-start mt-20 lg:mt-0">
-          <h1 class="text-3xl lg:text-6xl text-center lg:text-left font-semibold bg-gradient-to-bl from-zinc-800 to-zinc-950 text-balance dark:from-blue-100 dark:to-blue-50 bg-clip-text text-transparent">
-            Des articles
-            Pour les passionnés de la tech
+          <h1
+            class="text-3xl lg:text-6xl text-center lg:text-left font-semibold bg-gradient-to-bl from-zinc-800 to-zinc-950 text-balance dark:from-blue-100 dark:to-blue-50 bg-clip-text text-transparent"
+          >
+            Des articles Pour les passionnés de la tech
           </h1>
-          <p class="mt-8 text-zinc-500 lg:w-[50vw] text-center lg:text-left mx-auto text-balance">
+          <p
+            class="mt-8 text-zinc-500 lg:w-[50vw] text-center lg:text-left mx-auto text-balance"
+          >
             Fait ta veille technologique avec nos articles qui sont tendance et
             touche à tous les categories tech allant du développement logicielle
             à l'IA
           </p>
           <!-- Action btn box  -->
-          <div class="flex flex-col w-full lg:flex-row items-center gap-5 mt-10 justify-center lg:justify-start">
-            <a href="" class="p-2 bg-blue-600 hover:bg-blue-500 ring-1 ring-white/10 text-white rounded-full hover:shadow-lg w-full lg:w-max px-10 border border-white/5 flex justify-center duration-300 hover:shadow-blue-500/30">
+          <div
+            class="flex flex-col w-full lg:flex-row items-center gap-5 mt-10 justify-center lg:justify-start"
+          >
+            <a
+              href=""
+              class="p-2 bg-blue-600 hover:bg-blue-500 ring-1 ring-white/10 text-white rounded-full hover:shadow-lg w-full lg:w-max px-10 border border-white/5 flex justify-center duration-300 hover:shadow-blue-500/30"
+            >
               <span>Voir tous les articles</span>
             </a>
-            <a href="" class="p-2 flex items-center justify-center px-10 hover:bg-zinc-950/5 dark:hover:bg-white/10 rounded-full duration-300 w-full lg:w-max">
+            <a
+              href=""
+              class="p-2 flex items-center justify-center px-10 hover:bg-zinc-950/5 dark:hover:bg-white/10 rounded-full duration-300 w-full lg:w-max"
+            >
               <span>En savoir plus</span>
             </a>
           </div>
         </div>
-        <div class="h-[60vh] lg:h-[70vh] rounded-3xl w-full bg-zinc-950/5 dark:bg-white/5 ring-2 ring-white/10">
-
-        </div>
+        <div
+          class="h-[60vh] lg:h-[70vh] rounded-3xl w-full bg-zinc-950/5 dark:bg-white/5 ring-2 ring-white/10"
+        ></div>
       </section>
 
       <!-- latest post -->
-    <section class="grid place-content-center">
+      <section class="grid place-content-center">
+        <div class="grid gap-4 p-4">
+          <!-- Title -->
+          <div class="font-[1000] capitalize">
+            <h2>latest post</h2>
+          </div>
 
-      <div class="grid gap-4 p-4">
+          <div class="grid gap-4 lg:w-[60vw] mx-auto border p-2 border-zinc-950/5 dark:border-white/5 bg-zinc-50 dark:bg-transparent rounded-3xl">
+            <!-- Card 1 -->
+            <button class="flex items-center border p-4 rounded-2xl border-zinc-950/5 dark:border-white/5 bg-white dark:bg-white/5 ">
+              <div class="flex items-center gap-6">
+                <div class="h-max overflow-hidden w-[30vw]">
+                  <img
+                    class="rounded-lg transition duration-700 ease-in-out"
+                    src="./src/assets/blog/Img_1.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="p-4 flex flex-col">
+                  <span
+                    class="w-max font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700"
+                    >Technology
+                  </span>
+  
+                  <h5
+                    class="mb-2 text-left text-2xl font-semibold"
+                  >
+                    The Impact of Technology on the Workplace: How Technology is
+                    Changing
+                  </h5>
+  
+                  <div class="flex items-center mt-4">
+                    <a href="#">
+                      <img
+                        src="./src/assets/author/JulesM.png"
+                        alt="Author"
+                        class="w-8 h-8 rounded-full mr-3"
+                      />
+                    </a>
+                    <p class="text-sm text-gray-600">
+                      Jules MUKADI &bull; Fevrier 07, 2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </button>
+          </div>
 
-        <!-- Title -->
-        <div class="font-[1000] capitalize">
-          <h2>latest post</h2>
+          <!-- link view all -->
+          <div class="text-center mt-10">
+            <a
+              href="#"
+              class="capitalize p-3 border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700"
+              >view all post</a
+            >
+          </div>
         </div>
-
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-
-          <!-- Card 1 -->
-          <div
-            class="max-w-sm p-3 bg-white border border-gray-100 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-lg transition duration-700 ease-in-out" src="./src/assets/blog/Img_1.webp" alt="" />
-            </a>
-            <div class="p-4">
-              <span class="inline-flex items-center font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Technology</span>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Impact of
-                  Technology
-                  on the Workplace: How Technology is Changing</h5>
-              </a>
-              <div class="flex items-center mt-4">
-                <a href="#">
-                  <img src="./src/assets/author/JulesM.png" alt="Author" class="w-8 h-8 rounded-full mr-3">
-                </a>
-                <p class="text-sm text-gray-600">Jules MUKADI &bull; Fevrier 07, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="max-w-sm p-3 bg-white border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-lg" src="./src/assets/blog/Img_2.webp" alt="" />
-            </a>
-            <div class="p-4">
-              <span class="inline-flex items-center font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Technology</span>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Impact of
-                  Technology
-                  on the Workplace: How Technology is Changing</h5>
-              </a>
-              <div class="flex items-center mt-4">
-                <a href="#">
-                  <img src="./src/assets/author/JulesM.png" alt="Author" class="w-8 h-8 rounded-full mr-3">
-                </a>
-                <p class="text-sm text-gray-600">Jules MUKADI &bull; Fevrier 07, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="max-w-sm p-3 bg-white border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-lg" src="./src/assets/blog/Img_3.webp" alt="" />
-            </a>
-            <div class="p-4">
-              <span class="inline-flex items-center font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Technology</span>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Impact of
-                  Technology
-                  on the Workplace: How Technology is Changing</h5>
-              </a>
-              <div class="flex items-center mt-4">
-                <a href="#">
-                  <img src="./src/assets/author/JulesM.png" alt="Author" class="w-8 h-8 rounded-full mr-3">
-                </a>
-                <p class="text-sm text-gray-600">Jules MUKADI &bull; Fevrier 07, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div
-            class="max-w-sm p-3 bg-white border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-lg" src="./src/assets/blog/Img_1.webp" alt="" />
-            </a>
-            <div class="p-4">
-              <span class="inline-flex items-center font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Technology</span>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Impact of
-                  Technology
-                  on the Workplace: How Technology is Changing</h5>
-              </a>
-              <div class="flex items-center mt-4">
-                <a href="#">
-                  <img src="./src/assets/author/JulesM.png" alt="Author" class="w-8 h-8 rounded-full mr-3">
-                </a>
-                <p class="text-sm text-gray-600">Jules MUKADI &bull; Fevrier 07, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div
-            class="max-w-sm p-3 bg-white border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-lg" src="./src/assets/blog/Img_3.webp" alt="" />
-            </a>
-            <div class="p-4">
-              <span class="inline-flex items-center font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Technology</span>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Impact of
-                  Technology
-                  on the Workplace: How Technology is Changing</h5>
-              </a>
-              <div class="flex items-center mt-4">
-                <a href="#">
-                  <img src="./src/assets/author/JulesM.png" alt="Author" class="w-8 h-8 rounded-full mr-3">
-                </a>
-                <p class="text-sm text-gray-600">Jules MUKADI &bull; Fevrier 07, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div
-            class="max-w-sm p-3 bg-white border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-lg" src="./src/assets/blog/Img_1.webp" alt="" />
-            </a>
-            <div class="p-4">
-              <span class="inline-flex items-center font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Technology</span>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Impact of
-                  Technology
-                  on the Workplace: How Technology is Changing</h5>
-              </a>
-              <div class="flex items-center mt-4">
-                <a href="#">
-                  <img src="./src/assets/author/JulesM.png" alt="Author" class="w-8 h-8 rounded-full mr-3">
-                </a>
-                <p class="text-sm text-gray-600">Jules MUKADI &bull; Fevrier 07, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 7 -->
-          <div
-            class="max-w-sm p-3 bg-white border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-lg" src="./src/assets/blog/Img_1.webp" alt="" />
-            </a>
-            <div class="p-4">
-              <span class="inline-flex items-center font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Technology</span>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Impact of
-                  Technology
-                  on the Workplace: How Technology is Changing</h5>
-              </a>
-              <div class="flex items-center mt-4">
-                <a href="#">
-                  <img src="./src/assets/author/JulesM.png" alt="Author" class="w-8 h-8 rounded-full mr-3">
-                </a>
-                <p class="text-sm text-gray-600">Jules MUKADI &bull; Fevrier 07, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 8 -->
-          <div
-            class="max-w-sm p-3 bg-white border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-lg" src="./src/assets/blog/Img_1.webp" alt="" />
-            </a>
-            <div class="p-4">
-              <span class="inline-flex items-center font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Technology</span>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Impact of
-                  Technology
-                  on the Workplace: How Technology is Changing</h5>
-              </a>
-              <div class="flex items-center mt-4">
-                <a href="#">
-                  <img src="./src/assets/author/JulesM.png" alt="Author" class="w-8 h-8 rounded-full mr-3">
-                </a>
-                <p class="text-sm text-gray-600">Jules MUKADI &bull; Fevrier 07, 2025</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 9 -->
-          <div
-            class="max-w-sm p-3 bg-white border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-lg" src="./src/assets/blog/Img_1.webp" alt="" />
-            </a>
-            <div class="p-4">
-              <span class="inline-flex items-center font-semibold mb-4 rounded-md bg-blue-50 dark:bg-gray-900 px-3 py-2 text-xs text-blue-700">Technology</span>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Impact of
-                  Technology
-                  on the Workplace: How Technology is Changing</h5>
-              </a>
-              <div class="flex items-center mt-4">
-                <a href="#">
-                  <img src="./src/assets/author/JulesM.png" alt="Author" class="w-8 h-8 rounded-full mr-3">
-                </a>
-                <p class="text-sm text-gray-600">Jules MUKADI &bull; Fevrier 07, 2025</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- link view all -->
-        <div class="text-center mt-10">
-          <a href="#" class="capitalize p-3 border border-gray-200 rounded-lg dark:bg-zinc-950 dark:border-gray-700">view all post</a>
-        </div>
-      </div>
-
-    </section>
+      </section>
 
       <!-- A propos de nous  -->
-      <section class="h-max xl:h-[110vh] mt-16 mb-16 flex justify-center items-center">
+      <section
+        class="h-max xl:h-[110vh] mt-16 mb-16 flex justify-center items-center"
+      >
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           <div class="flex gap-10 p-6 lg:p-0">
-
-
-            <div class="w-full h-[35vh] lg:h-[50vh] bg-zinc-950/10 dark:bg-white/10 rounded-3xl">
-
-            </div>
-            <div class="w-full h-[35vh] lg:h-[50vh] mt-16 bg-zinc-950/10 dark:bg-white/10 rounded-3xl">
-
-            </div>
+            <div
+              class="w-full h-[35vh] lg:h-[50vh] bg-zinc-950/10 dark:bg-white/10 rounded-3xl"
+            ></div>
+            <div
+              class="w-full h-[35vh] lg:h-[50vh] mt-16 bg-zinc-950/10 dark:bg-white/10 rounded-3xl"
+            ></div>
           </div>
           <div class="p-6 lg:p-0">
             <h2 class="text-4xl lg:text-5xl">A propos de nous</h2>
             <div class="mt-8">
               <p class="text-lg lg:text-xl lg:text-balance">
-                Nous sommes une communauté des jeunes dynamiques qui 
-                ont pour objectif de partager la connaissance dans le domaine de la technologie
-                et de l'innovation. Nous sommes passionnés par la technologie et nous voulons
-                partager cette passion avec le monde entier. Nous sommes une communauté ouverte
-                à tous ceux qui veulent apprendre et partager leurs connaissances avec les autres.
+                Nous sommes une communauté des jeunes dynamiques qui ont pour
+                objectif de partager la connaissance dans le domaine de la
+                technologie et de l'innovation. Nous sommes passionnés par la
+                technologie et nous voulons partager cette passion avec le monde
+                entier. Nous sommes une communauté ouverte à tous ceux qui
+                veulent apprendre et partager leurs connaissances avec les
+                autres.
               </p>
 
-              <a href="#" class="p-2 lg:p-4 lg:px-10 flex justify-center items-center px-6 mt-10 lg:mt-8 bg-blue-600 text-white rounded-full hover:bg-blue-500 duration-300 lg:w-max">
+              <a
+                href="#"
+                class="p-2 lg:p-4 lg:px-10 flex justify-center items-center px-6 mt-10 lg:mt-8 bg-blue-600 text-white rounded-full hover:bg-blue-500 duration-300 lg:w-max"
+              >
                 Nous réjoindre
               </a>
             </div>
@@ -479,85 +324,128 @@
     </main>
     <!-- Le footer de la page -->
     <footer class="footer py-8 lg:h-[60vh] dark:bg-zinc-900 bg-zinc-100">
-			<div class="container mx-auto px-4 mt-4 h-full flex flex-col justify-between">
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-					<div>
-						<h4 class="font-bold mb-4 text-2xl">
-							<span>InfinityTech</span>
-						</h4>
-						<p class="text-gray-500 text-balance">L'obectif ici est de mettre a jour la connaissance a tous, dans tout les domaine multidsciplainaire de la vie liee a la Technologie</p>
-						
-					</div>
-					<div>
-						<h4 class="font-light mb-4">Liens rapides</h4>
-						<ul class="text-gray-500  *:hover:text-blue-600 *:dark:hover:text-white *:duration-300">
-							<li><a href="#">Accueil</a></li>
-							<li><a href="#">À propos</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Archives</a></li>
-							<li><a href="#">Auteur</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-					<div>
-						<h4 class="font-light mb-4">Catégories</h4>
-						<ul class="text-gray-500 *:hover:text-blue-600 *:dark:hover:text-white *:duration-300">
-							<li><a href="#">Lifestyle</a></li>
-							<li><a href="#">Technologie</a></li>
-							<li><a href="#">Voyage</a></li>
-							<li><a href="#">Business</a></li>
-							<li><a href="#">Économie</a></li>
-							<li><a href="#">Sports</a></li>
-						</ul>
-					</div>
-					<div>
-						<div>
-							<div><span class="font-[1000]">Email :</span>  <a class="text-gray-500" href="mailto:info@gmailcom">info@gmailcom</a></div>
-							<div><span class="font-[1000]">Phone :</span>  <a  class="text-gray-500" href="tel:+243 822717275">+243 822717275</a></div>
-						</div>
-					</div>
-					
-				</div>
-		
-				<div>
-					<hr class="mt-10 border-zinc-950/20 dark:border-zinc-800">
-		
-				<div class="flex pt-4 flex-col lg:flex-row justify-between items-center">
-					<div class="flex flex-col items-center lg:items-start gap-2">
-						<ul class="flex space-x-4 ">
-							<li>
-								<a href="https://www.facebook.com/" target="_blank" class="text-2xl">
-									<ion-icon name="logo-facebook"></ion-icon>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.twitter.com/" target="_blank" class="text-2xl">
-									<ion-icon name="logo-twitter"></ion-icon>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/" target="_blank" class="text-2xl">
-									<ion-icon name="logo-instagram"></ion-icon>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/" target="_blank" class="text-2xl">
-									<ion-icon name="logo-linkedin"></ion-icon>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="dark:text-zinc-400">
-						<p>Copyright &copy; 2025 INFINITY-TECH. Tous droits réservés.</p>
-					</div>
-				</div>
-				</div>
-			</div>
-		</footer>
+      <div
+        class="container mx-auto px-4 mt-4 h-full flex flex-col justify-between"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
+        >
+          <div>
+            <h4 class="font-bold mb-4 text-2xl">
+              <span>InfinityTech</span>
+            </h4>
+            <p class="text-gray-500 text-balance">
+              L'obectif ici est de mettre a jour la connaissance a tous, dans
+              tout les domaine multidsciplainaire de la vie liee a la
+              Technologie
+            </p>
+          </div>
+          <div>
+            <h4 class="font-light mb-4">Liens rapides</h4>
+            <ul
+              class="text-gray-500 *:hover:text-blue-600 *:dark:hover:text-white *:duration-300"
+            >
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">À propos</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Archives</a></li>
+              <li><a href="#">Auteur</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-light mb-4">Catégories</h4>
+            <ul
+              class="text-gray-500 *:hover:text-blue-600 *:dark:hover:text-white *:duration-300"
+            >
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Technologie</a></li>
+              <li><a href="#">Voyage</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Économie</a></li>
+              <li><a href="#">Sports</a></li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <div>
+                <span class="font-[1000]">Email :</span>
+                <a class="text-gray-500" href="mailto:info@gmailcom"
+                  >info@gmailcom</a
+                >
+              </div>
+              <div>
+                <span class="font-[1000]">Phone :</span>
+                <a class="text-gray-500" href="tel:+243 822717275"
+                  >+243 822717275</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div>
+          <hr class="mt-10 border-zinc-950/20 dark:border-zinc-800" />
 
-  <script type="module" src="/src/main.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <div
+            class="flex pt-4 flex-col lg:flex-row justify-between items-center"
+          >
+            <div class="flex flex-col items-center lg:items-start gap-2">
+              <ul class="flex space-x-4">
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="text-2xl"
+                  >
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    class="text-2xl"
+                  >
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="text-2xl"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    class="text-2xl"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dark:text-zinc-400">
+              <p>Copyright &copy; 2025 INFINITY-TECH. Tous droits réservés.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
