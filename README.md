@@ -15,7 +15,7 @@ Ce projet est un site web collaboratif en HTML et Tailwind CSS pour la communaut
 
 ## 🚀 Fonctionnalités
 
-- **Interface moderne et responsive** : Un design clair et adaptatif pour une navigation fluide.
+- **Interface moderne et responsive** : Un design clair et adaptatif pour une navigation fluide et intuitive .
 - **Catégories d'actualités** : Organisation des articles en différentes sections (ex. : innovations, gadgets, logiciels, intelligence artificielle, etc.).
 - **Ressources pédagogiques** : Documentation et guides pour aider les débutants dans leur parcours.
 
