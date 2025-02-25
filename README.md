@@ -24,6 +24,7 @@ Ce projet est un site web collaboratif en HTML et Tailwind CSS pour la communaut
 
 - **HTML** : Pour la structure du site.
 - **TailwindCSS** : Pour la mise en forme et l'esthétique.
+- **Javascript & Firebase** : backend 
 - **Git & GitHub** : Pour la gestion du code et la collaboration entre contributeurs.
 - **Vite js** : Bundler
 - **Boxicons and heroicons** : for icons
