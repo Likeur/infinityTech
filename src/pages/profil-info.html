@@ -132,7 +132,7 @@
 		<!-- Ton code start here -->
 		<!-- Profil info -->
 		<section class="container mx-auto xl:px-52 py-24 dark:text-white">
-			<div class="md:px-14 py-8  md:border border-gray-100 dark:border-gray-700 rounded-lg flex flex-col gap-4">
+			<div class="md:px-14 py-8  md:border border-gray-100 dark:border-white/5 rounded-lg flex flex-col gap-4">
 				<div class="">
 					<div class="md:flex md:justify-between">
 						<div class="flex flex-col md:flex-row md:items-center mt-4 mb-4 gap-9">
@@ -144,19 +144,12 @@
 							</div>
 							<div class="flex flex-col">
 								<h1 class="text-2xl text-black dark:text-white font-bold p-0">Jules MUKADI</h1>
-								<span class="capitalize mt-3">frontEnd developer</span>
-								<div class=" flex gap-3 mt-4">
-									<p><span class="font-bold">20 </span>Followers</p>
-									<p><span class="font-bold">2 </span>Following</p>
-								</div>
+								<span class="capitalize mt-3 text-zinc-950/70 dark:text-white/80">frontEnd developer</span>
+								
 							</div>
 						</div>
 
 						<div class="flex items-center gap-2">
-							<!-- Bouton Share -->
-							<a href="#" class="border border-gray-500 dark:border-gray-700 duration-300 hover:bg-gray-900 w-10 h-10 rounded-full flex items-center justify-center">
-								<ion-icon class="text-gray-500 dark:text-gray-300 text-lg" name="share-outline"></ion-icon>
-							</a>
 						
 							<!-- Bouton Edit -->
 							<a href="#" class="bg-blue-700 hover:bg-blue-500 duration-300 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium">
@@ -168,70 +161,38 @@
 					</div>
 				</div>
 				<div
-					class="p-3 px-12 flex justify-center capitalize text-zinc-600 border border-gray-100 rounded-lg dark:bg-zinc-950 dark:border-gray-700">
+					class="p-3 px-12 flex justify-center capitalize text-zinc-600 border border-gray-100 rounded-lg dark:bg-zinc-950 dark:border-white/5">
 					<h5 class="">member since feb, 2025</h5>
 				</div>
-				<div class="border border-gray-100 dark:border-gray-700 p-6 rounded-lg">
-					<div class="mb-6 flex justify-between">
-						<h2>Write at</h2>
-						<a href="#" class="text-blue-700 hover:text-blue-500 duration-300 flex items-center gap-2"><ion-icon class="size-7"
-								name="settings-outline"></ion-icon><span class="">Manage blogs</span></a>
-					</div>
-					<hr class="border-gray-100 dark:border-gray-700">
-					<div class="flex justify-between items-center">
-						<div class="mt-4 flex gap-4">
-							<img src="../assets/author/JulesM.png" alt="author" class="w-15 h-15 rounded-sm">
-							<div class="flex flex-col justify-center">
-								<h3>Jules's Blog</h3>
-								<a href="#" class="text-zinc-600">julesmukadi.me</a>
-							</div>
-						</div>
-						<div class="flex justify-end items-center">
-							<a href="#" class="inline-flex  hover:bg-gray-900 duration-300 items-center gap-2 border border-gray-100 dark:border-gray-700 rounded-full px-3 py-3 w-fit">
-								<svg xmlns="http://www.w3.org/2000/svg" class="size-6 font-bold" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-									<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /></svg>	</ion-icon>
-								<span class="">Read</span>
-							</a>
-						</div>					  
-					</div>
-				</div>
-				<div class="grid md:grid-cols-3 gap-8 grid-cols-1">
-					<div class="border border-gray-100 dark:border-gray-700 rounded-lg p-6">
+			
+				<div class="grid md:grid-cols-2 gap-8">
+					<div class="border border-gray-100 dark:border-white/5 rounded-lg p-6">
 						<h2 class="capitalize font-bold mb-6">about me</h2>
-						<a href="#" class="inline-flex  hover:bg-gray-900 duration-300 items-center gap-2 border border-gray-100 dark:border-gray-700 rounded-full px-3 py-3 w-fit">
+						<button class="inline-flex hover:cursor-pointer  hover:bg-zinc-900 dark:hover:bg-white/5 hover:text-white duration-300 items-center gap-2 border border-gray-100 dark:border-white/5 rounded-full p-2 px-5 w-fit">
 							<ion-icon name="add" class="size-6"></ion-icon>
 							<span class="">Add Bio</span>
-						</a>
+						</button>
 						
 						<p class="italic text-zinc-600 mt-4">Your bio is empty. Tell the world you are you writing a
 							short description about you.</p>
 					</div>
-					<div class="border border-gray-100 dark:border-gray-700 rounded-lg p-6">
+					<div class="border border-gray-100 dark:border-white/5 rounded-lg p-6">
 						<h2 class="capitalize mb-6">my tech stack</h2>
-						<a href="#" class="inline-flex  hover:bg-gray-900 duration-300 items-center gap-2 border border-gray-100 dark:border-gray-700 rounded-full px-3 py-3 w-fit">
+						<button class="inline-flex hover:cursor-pointer  hover:bg-zinc-900 dark:hover:bg-white/5 hover:text-white  duration-300 items-center gap-2 border border-gray-100 dark:border-white/5 rounded-full p-2 px-5 w-fit">
 								<ion-icon name="add" class="size-6"></ion-icon>
 								<span class="">Add your skils</span>
-							</a>
+							</button>
 					</div>
-					<div class="border border-gray-100 dark:border-gray-700 rounded-lg p-6">
+					<div class="border border-gray-100 dark:border-white/5 rounded-lg p-6">
 						<h2 class="mb-6">I am available for</h2>
-						<a href="#" class="inline-flex hover:bg-gray-900 duration-300 items-center gap-2 border border-gray-100 dark:border-gray-700 rounded-full px-3 py-3 w-fit">
+						<button class="inline-flex hover:cursor-pointer hover:bg-zinc-900 dark:hover:bg-white/5 hover:text-white duration-300 items-center gap-2 border border-gray-100 dark:border-white/5 rounded-full p-2 px-5 w-fit">
 								<ion-icon name="add" class="size-6"></ion-icon>
 								<span class="">Add Available For</span>
-							</a>
+						</button>
 					</div>
 				</div>
 				
-				<div class="border border-gray-100 dark:border-gray-700 rounded-lg p-6">
-					<h2 class="mb-6">Recent Activity</h2>
-					<div class="grid grid-cols-9 gap-4">
-						<span class="text-zinc-600">Feb 16</span>
-						<div class="relative col-span-8">
-							<span class="text-zinc-600">Joined Hashnode</span>
-							<hr class="mt-3 border border-gray-100 dark:border-gray-700">
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</section>
 
