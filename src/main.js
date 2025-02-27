@@ -143,7 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			)
 
 			// Ajouter la classe active à l'onglet cliqué
-			tab.classList.add('text-zinc-600', 'border-b-2', 'border-zinc-600')
+			tab.classList.remove('text-zinc-500', 'border-transparent')
+			tab.classList.add('text-blue-600', 'border-b-2', 'border-blue-600')
 
 			// Récupérer la catégorie de l'onglet cliqué
 			const category = tab.getAttribute('data-category') || 'all'
