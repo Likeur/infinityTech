@@ -221,8 +221,8 @@
 			</section>
 
 			<!-- Articles filters -->
-			<section class="grid place-content-left p-4 pt-7 lg:p-0">
-				<div>
+			<section class="p-4 pt-7 lg:p-0">
+				<div class="flex items-center gap-4">
 					<!-- Dropdown pour mobile -->
 					<div
 						class="sm:hidden p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700">
@@ -273,6 +273,38 @@
 								IA
 							</button>
 						</nav>
+					</div>
+
+					<div class="flex w-full place-content-end">
+						<!-- Barre de recherche -->
+						<div class="relative w-full max-w-md">
+							<input
+								type="text"
+								placeholder="Search..."
+								class="w-full px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700" />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="absolute right-3 top-3 h-5 w-5 text-zinc-400"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+							</svg>
+						</div>
+
+						<!-- Options de tri -->
+						<!-- <div class="ml-auto">
+							<select
+								class="px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700">
+								<option value="recent">Recent</option>
+								<option value="popular">Popular</option>
+								<option value="oldest">Oldest</option>
+							</select>
+						</div> -->
 					</div>
 				</div>
 			</section>
