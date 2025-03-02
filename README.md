@@ -1,7 +1,7 @@
 # Infinity Tech
 
 Bienvenue sur **Infinity Tech** !
-Ce projet est un site web collaboratif en HTML et Tailwind CSS pour la communauté infinity tech dédié au partage des dernières actualités technologiques, tout en offrant un environnement d'apprentissage aux développeurs débutants.
+Ce projet est un site web communautaire doté d'un espace blog pour la communauté infinity tech dédié au partage des dernières actualités technologiques, tout en offrant un environnement d'apprentissage aux développeurs débutants.
 
 
 
