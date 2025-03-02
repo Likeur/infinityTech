@@ -5,7 +5,7 @@ Ce projet est un site web collaboratif en HTML et Tailwind CSS pour la communaut
 
 
 
-## 🎯 Objectifs du Projet
+## 🎯 Objectifs de la plateforme 
 
 - **Diffuser des actualités technologiques** : Fournir une plateforme simple et intuitive pour rester informé des dernières tendances et innovations.
 - **Encourager l'apprentissage collaboratif** : Permettre aux développeurs débutants de contribuer à un projet réel, d'améliorer leurs compétences et de travailler en équipe.
@@ -13,7 +13,7 @@ Ce projet est un site web collaboratif en HTML et Tailwind CSS pour la communaut
 
 
 
-## 🚀 Fonctionnalités
+## 🚀 Fonctionnalités clé 
 
 - **Interface moderne et responsive** : Un design clair et adaptatif pour une navigation fluide et intuitive .
 - **Catégories d'actualités** : Organisation des articles en différentes sections (ex. : innovations, gadgets, logiciels, intelligence artificielle, etc.).
