@@ -1,9 +1,16 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Liter&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-body{
-    font-family: "Liter", serif;
+body {
+  font-family: "Liter", serif;
+}
+
+.skewbox {
+  background-image: radial-gradient(#4242e33a 1px, transparent 1px),
+    radial-gradient(#4242e34a 1px, transparent 1px);
+  background-size: 21px 21px;
+  background-position: 0 0, 10.5px 10.5px;
+  background-color: rgba(71, 212, 255, 0);
 }
