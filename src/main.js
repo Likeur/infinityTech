@@ -75,10 +75,10 @@ window.addEventListener('scroll', () => {
 			'shadow-lg',
 			'lg:mt-6',
 			'lg:rounded-full',
-			'backdrop-blur-2xl',
+			'backdrop-blur-3xl',
 			'lg:border-b',
-			'lg:dark:border-white/40',
-			'lg:border-zinc-950/40',
+			'lg:dark:border-white/10',
+			'lg:border-zinc-950/10',
 			'lg:w-[70vw]'
 		)
 		header.classList.remove(
