@@ -279,15 +279,21 @@
           class="border border-zinc-950/5 dark:border-white/5 aboutbox p-4 h-max flex flex-col gap-5"
         >
           <section
-            class="h-max bg-gradient-to-tr dark:from-zinc-900/40  dark:via-blue-600/10 overflow-hidden backdrop-blur-md border dark:border-white/5 border-zinc-950/5 dark:to-blue-950/20 rounded-3xl flex flex-col justify-between relative group shadow-2xl shadow-blue-600/10 p-2 lg:w-[85vw] mx-auto"
+            class="h-max bg-gradient-to-tr dark:from-zinc-900/40 dark:via-blue-600/10 overflow-hidden backdrop-blur-md border dark:border-white/5 border-zinc-950/5 dark:to-blue-950/20 rounded-3xl flex flex-col justify-between relative group shadow-2xl shadow-blue-600/10 p-2 lg:w-[85vw] mx-auto"
           >
             <div class="grid lg:grid-cols-2 gap-5 lg:gap-10 items-center">
               <div class="flex rounded-3xl relative overflow-hidden">
                 <div
-                  class="w-full h-[35vh] scale-110 -rotate-12 relative -top-32 lg:h-[50vh] bg-zinc-950/10 dark:bg-white/10 rounded-3xl aboutusfirst"
+                  class="w-full h-[35vh] scale-110 -rotate-12 relative -top-32 lg:h-[50vh] bg-zinc-950/10 dark:bg-white/10 rounded-3xl aboutusfirst group-hover:scale-125 duration-1000"
                 ></div>
-                <div class="absolute bottom-16 right-12 bg-zinc-950 h-72 w-[80%] mix-blend-exclusion rounded-br-3xl ring-8 rotate-3 shadow-2xl shadow-blue-600/10 overflow-hidden">
-                  <img src="/src/assets/Img_1.webp" class="h-full w-full object-cover" alt="">
+                <div
+                  class="absolute bottom-16 right-12 bg-zinc-950 h-72 w-[80%] mix-blend-exclusion rounded-br-3xl ring-8 rotate-3 shadow-2xl shadow-blue-600/10 overflow-hidden"
+                >
+                  <img
+                    src="/src/assets/Img_1.webp"
+                    class="h-full w-full object-cover"
+                    alt=""
+                  />
                 </div>
               </div>
               <div
@@ -307,9 +313,28 @@
 
                   <a
                     href="#"
-                    class="p-2 border dark:border-white/5 border-zinc-950/5 lg:px-10 flex justify-center items-center px-6 mt-10 lg:mt-8 bg-blue-600 text-white rounded-full hover:bg-blue-500 duration-300 lg:w-max"
+                    class="p-2 border dark:border-white/5 border-zinc-950/5 flex justify-between gap-6 items-center mt-10 lg:mt-8 bg-blue-600 text-white rounded-full hover:bg-blue-700 duration-300 lg:w-max"
                   >
-                    Nous réjoindre
+                    <span class="relative left-2 font-light">
+                      Nous réjoindre
+                    </span>
+
+                    <span class="size-10 bg-white/15 grid place-content-center rounded-full border border-white/5 group-hover:-rotate-45 duration-500">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                        />
+                      </svg>
+                    </span>
                   </a>
                 </div>
               </div>
@@ -317,13 +342,11 @@
           </section>
           <section class="grid lg:grid-cols-2 gap-5">
             <div
-              class="lg:h-[50vh] bg-gradient-to-bl dark:from-zinc-900/40  dark:via-blue-600/10 overflow-hidden backdrop-blur-md border dark:border-white/5 border-zinc-950/5 dark:to-blue-950/20 rounded-3xl p-6 flex flex-col justify-between"
+              class="lg:h-[50vh] bg-gradient-to-bl dark:from-zinc-900/40 dark:via-blue-600/10 overflow-hidden backdrop-blur-md border dark:border-white/5 border-zinc-950/5 dark:to-blue-950/20 rounded-3xl p-6 flex flex-col justify-between"
             >
-              <div class=" bg-red-500 size-12 rounded-full">
-
-              </div>
+              <div class="bg-red-500 size-12 rounded-full"></div>
               <div>
-                <h2 class="text-xl ">Nous travaillons sur des projets</h2>
+                <h2 class="text-xl">Nous travaillons sur des projets</h2>
                 <p class="mt-2 font-light text-sm dark:text-white/80">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dolore dignissimos eligendi quos incidunt expedita omnis sed
@@ -334,24 +357,23 @@
             </div>
 
             <div
-              class="lg:h-[50vh] bg-gradient-to-br dark:from-zinc-900/40  dark:via-blue-600/10 overflow-hidden backdrop-blur-md border dark:border-white/5 border-zinc-950/5 dark:to-blue-950/20 rounded-3xl p-6 flex flex-col justify-between relative group"
+              class="lg:h-[50vh] bg-gradient-to-br dark:from-zinc-900/40 dark:via-blue-600/10 overflow-hidden backdrop-blur-md border dark:border-white/5 border-zinc-950/5 dark:to-blue-950/20 rounded-3xl p-6 flex flex-col justify-between relative group"
             >
               <div class="relative -top-20">
-                <div class=" bg-blue-500/60 h-56 w-[87%] rounded-2xl -rotate-12 absolute top-0 backdrop-blur-2xl group-hover:top-3 duration-300 
-                ">
-
-                </div>
-                <div class=" bg-lime-500/60 h-56 w-[87%] rounded-2xl -rotate-12 absolute top-5 left-8 group-hover:top-8 duration-300 
-                ">
-
-                </div>
-                <div class=" bg-red-500/60 h-56 w-[87%] rounded-2xl -rotate-12 absolute top-10 left-16 group-hover:top-16 duration-300 
-                ">
-
-                </div>
+                <div
+                  class="bg-blue-500/60 h-56 w-[87%] rounded-2xl -rotate-12 absolute top-0 backdrop-blur-2xl group-hover:top-3 duration-300"
+                ></div>
+                <div
+                  class="bg-lime-500/60 h-56 w-[87%] rounded-2xl -rotate-12 absolute top-5 left-8 group-hover:top-8 duration-300"
+                ></div>
+                <div
+                  class="bg-red-500/60 h-56 w-[87%] rounded-2xl -rotate-12 absolute top-10 left-16 group-hover:top-16 duration-300"
+                ></div>
               </div>
               <div>
-                <h2 class="text-xl ">Nous sommes un groupe des jeunes pationnées</h2>
+                <h2 class="text-xl">
+                  Nous sommes un groupe des jeunes pationnées
+                </h2>
                 <p class="mt-2 font-light text-sm dark:text-white/80">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dolore dignissimos eligendi quos incidunt expedita omnis sed
@@ -360,7 +382,6 @@
                 </p>
               </div>
             </div>
-           
           </section>
         </section>
       </section>
