@@ -10,8 +10,8 @@ body {
 }
 
 .skewbox {
-  background-image: radial-gradient(#4242e33a 1px, transparent 1px),
-    radial-gradient(#4242e34a 1px, transparent 1px);
+  background-image: radial-gradient(#4242e365 1px, transparent 1px),
+    radial-gradient(#1760c734 1px, transparent 1px);
   background-size: 21px 21px;
   background-position: 0 0, 10.5px 10.5px;
   background-color: rgba(71, 212, 255, 0);
@@ -31,4 +31,10 @@ body {
   );
   background-size: 15px 15px;
   background-color: rgba(71, 212, 255, 0);
+}
+
+.aboutusfirst{
+  background-image: linear-gradient(#3229e728 0.5px, transparent 0.5px), linear-gradient(to right, #5c29e728 0.5px, transparent 0.5px);
+  background-size: 27px 27px;
+  background-color: rgba(245, 120, 155, 0);
 }
