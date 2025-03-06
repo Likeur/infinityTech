@@ -44,11 +44,13 @@
         </div>
 
         <!-- Menu mobile -->
-        <div class="fixed h-0 duration-150 lg:hidden overflow-hidden z-40 p-2 top-16 left-0 right-0 group-data-[state=active]:h-screen w-screen">
+        <div
+          class="fixed h-0 duration-150 lg:hidden overflow-hidden z-40 p-2 top-16 left-0 right-0 group-data-[state=active]:h-screen w-screen"
+        >
           <!-- Menu mobile -->
           <ul
             id="menumobile"
-            class=" border opacity-0 rounded-3xl h-[45vh] w-[95vw] mx-auto flex flex-col justify-between border-zinc-950/10 dark:border-white/10 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100  overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300  p-8"
+            class="border opacity-0 rounded-3xl h-[45vh] w-[95vw] mx-auto flex flex-col justify-between border-zinc-950/10 dark:border-white/10 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100 overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300 p-8"
           >
             <div class="flex flex-col gap-5">
               <li>
@@ -58,7 +60,7 @@
                   >Articles</a
                 >
               </li>
-  
+
               <li>
                 <a
                   href="/src/pages/about.html"
@@ -603,7 +605,9 @@
       </section>
     </main>
     <!-- Le footer de la page -->
-    <footer class="footer py-8 lg:h-[60vh] border-t border-dashed border-zinc-950/10 dark:border-white/5 relative overflow-hidden">
+    <footer
+      class="footer py-8 lg:h-[60vh] border-t border-dashed border-zinc-950/10 dark:border-white/5 relative overflow-hidden"
+    >
       <div
         class="container relative z-40 mx-auto px-4 mt-4 h-full flex flex-col justify-between"
       >
@@ -611,38 +615,57 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
         >
           <div class="lg:col-span-2">
-            <h4 class="mb-4 text-2xl">
-              <span>InfinityTech</span>
-            </h4>
-            <p class="dark:text-white/80 text-zinc-800 font-light text-balance">
+            <!-- logo officiel du site -->
+            <div class="">
+              <a
+                href="/index.html"
+                class="text-lg font-light flex gap-1 items-center"
+              >
+                <span class="h-max grid place-content-center">
+                  <i class="bx bx-infinite text-4xl"></i>
+                </span>
+                <div>
+                  <span class=""
+                    >infinity<span class="text-blue-700 font-semibold"
+                      >Tech</span
+                    ></span
+                  >
+                </div>
+              </a>
+            </div>
+            <p class="dark:text-white/80 mt-3 text-zinc-800 font-light text-balance">
               L'obectif ici est de mettre a jour la connaissance a tous, dans
               tout les domaine multidsciplainaire de la vie liee a la
               Technologie
             </p>
           </div>
           <div>
-            <h4 class="font-medium  mb-4">Liens rapides</h4>
+            <h4 class="font-medium mb-4">Liens rapides</h4>
             <ul
               class="dark:text-white/75 text-zinc-800 font-light *:hover:text-blue-600 *:duration-300"
             >
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">À propos</a></li>
-              <li><a href="#">Articles</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/index.html">Accueil</a></li>
+              <li><a href="/src/pages/about.html">À propos</a></li>
+              <li><a href="/src/pages/articles.html">Articles</a></li>
+              <li><a href="/src/pages/contact.html">Contact</a></li>
             </ul>
           </div>
-          
+
           <div>
             <div>
               <div>
-                <span >Email :</span>
-                <a class="dark:text-white/70 text-zinc-800 font-light" href="mailto:info@gmailcom"
+                <span>Email :</span>
+                <a
+                  class="dark:text-white/70 text-zinc-800 font-light"
+                  href="mailto:info@gmailcom"
                   >info@gmailcom</a
                 >
               </div>
               <div>
                 <span>Phone :</span>
-                <a class="dark:text-white/70 text-zinc-800 font-light" href="tel:+243 822717275"
+                <a
+                  class="dark:text-white/70 text-zinc-800 font-light"
+                  href="tel:+243 822717275"
                   >+243 822717275</a
                 >
               </div>
@@ -651,7 +674,9 @@
         </div>
 
         <div>
-          <hr class="mt-10 border-zinc-950/10 dark:border-white/5 border-dashed" />
+          <hr
+            class="mt-10 border-zinc-950/10 dark:border-white/5 border-dashed"
+          />
 
           <div
             class="flex pt-4 flex-col lg:flex-row justify-between items-center"
@@ -696,15 +721,24 @@
                 </li>
               </ul>
             </div>
-            <div class="dark:text-white/60 font-light mt-2 lg:mt-0 text-center lg:text-left">
-              <p>Copyright &copy; 2025 INFINITY-TECH. <br class="lg:hidden"> Tous droits réservés.</p>
+            <div
+              class="dark:text-white/60 font-light mt-2 lg:mt-0 text-center lg:text-left"
+            >
+              <p>
+                Copyright &copy; 2025 INFINITY-TECH. <br class="lg:hidden" />
+                Tous droits réservés.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="absolute size-[75rem] bg-gradient-to-t from-blue-600/10 via-blue-400/20 to-transparent blur-3xl -bottom-[50rem] z-0 rounded-full left-[10%] opacity-55"></div>
+      <div
+        class="absolute size-[75rem] bg-gradient-to-t from-blue-600/10 via-blue-400/20 to-transparent blur-3xl -bottom-[50rem] z-0 rounded-full left-[10%] opacity-55"
+      ></div>
 
-      <div class="absolute size-[55rem] bg-gradient-to-t from-blue-600 via-blue-400 to-transparent blur-3xl -bottom-[35rem] z-0 rounded-full left-[20%] opacity-15"></div>
+      <div
+        class="absolute size-[55rem] bg-gradient-to-t from-blue-600 via-blue-400 to-transparent blur-3xl -bottom-[35rem] z-0 rounded-full left-[20%] opacity-15"
+      ></div>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
