@@ -603,9 +603,9 @@
       </section>
     </main>
     <!-- Le footer de la page -->
-    <footer class="footer py-8 lg:h-[60vh] border-t border-dashed border-zinc-950/10 dark:border-white/5">
+    <footer class="footer py-8 lg:h-[60vh] border-t border-dashed border-zinc-950/10 dark:border-white/5 relative overflow-hidden">
       <div
-        class="container mx-auto px-4 mt-4 h-full flex flex-col justify-between"
+        class="container relative z-40 mx-auto px-4 mt-4 h-full flex flex-col justify-between"
       >
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
@@ -702,6 +702,9 @@
           </div>
         </div>
       </div>
+      <div class="absolute size-[75rem] bg-gradient-to-t from-blue-600/10 via-blue-400/20 to-transparent blur-3xl -bottom-[50rem] z-0 rounded-full left-[10%] opacity-55"></div>
+
+      <div class="absolute size-[55rem] bg-gradient-to-t from-blue-600 via-blue-400 to-transparent blur-3xl -bottom-[35rem] z-0 rounded-full left-[20%] opacity-15"></div>
     </footer>
 
     <script type="module" src="/src/main.js"></script>
