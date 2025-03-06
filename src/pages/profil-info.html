@@ -1,419 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil info</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Profil info</title>
-	<link rel="stylesheet" href="/src/style.css">
-</head>
+  <body
+    class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950 relative"
+  >
+    <div
+      class="fixed hidden lg:block lg:dark:block bg-gradient-to-b dark:from-blue-600 dark:via-blue-900/50 to-transparent blur-3xl size-[60rem] lg:left-[15%] rounded-full lg:-top-[90%] z-0"
+    ></div>
+    <!-- Le header plus la navigation mobile et pc -->
+    <header
+      id="header"
+      class="fixed w-screen left-0 z-50 bg-white/80 lg:bg-transparent dark:bg-zinc-950/80 lg:dark:bg-transparent lg:backdrop-blur-none right-0 group p-3 px-8 lg:px-6 border-b lg:border-none lg:w-[75vw] lg:mx-auto border-dashed border-zinc-950/5 dark:border-white/5 duration-300 lg:top-4"
+    >
+      <!-- Nav overlay -->
 
-<body
-	class="w-screen overflow-x-hidden text-zinc-800 dark:text-zinc-100 duration-300 bg-white dark:bg-zinc-950 relative">
-	<div
-		class="fixed hidden lg:block lg:dark:block bg-gradient-to-b dark:from-blue-600 dark:via-blue-900/50 to-transparent blur-3xl size-[60rem] lg:left-[15%] rounded-full lg:-top-[90%] z-0">
-	</div>
-	 <!-- Le header plus la navigation mobile et pc -->
-	 <header
-	 id="header"
-	 class="fixed w-screen left-0 z-50 bg-white/80 lg:bg-transparent dark:bg-zinc-950/80 lg:dark:bg-transparent lg:backdrop-blur-none right-0 group p-3 px-8 lg:px-6 border-b lg:border-none lg:w-[75vw] lg:mx-auto border-dashed border-zinc-950/5 dark:border-white/5 duration-300 lg:top-4"
-   >
-	 <!-- Nav overlay -->
+      <nav class="flex items-center justify-between">
+        <!-- logo officiel du site -->
+        <div class="">
+          <a
+            href="/index.html"
+            class="text-lg font-light flex gap-1 items-center"
+          >
+            <span class="h-max grid place-content-center">
+              <i class="bx bx-infinite text-4xl"></i>
+            </span>
+            <div class="hidden lg:block">
+              <span class=""
+                >infinity<span class="text-blue-700 font-semibold"
+                  >Tech</span
+                ></span
+              >
+            </div>
+          </a>
+        </div>
 
-	 <nav class="flex items-center justify-between">
-	   <!-- logo officiel du site -->
-	   <div class="">
-		 <a
-		   href="/index.html"
-		   class="text-lg font-light flex gap-1 items-center"
-		 >
-		   <span class="h-max grid place-content-center">
-			 <i class="bx bx-infinite text-4xl"></i>
-		   </span>
-		   <div class="hidden lg:block">
-			 <span class=""
-			   >infinity<span class="text-blue-700 font-semibold"
-				 >Tech</span
-			   ></span
-			 >
-		   </div>
-		 </a>
-	   </div>
+        <!-- Menu mobile -->
+        <div
+          class="fixed h-0 duration-150 lg:hidden overflow-hidden z-40 p-2 top-16 left-0 right-0 group-data-[state=active]:h-screen w-screen"
+        >
+          <!-- Menu mobile -->
+          <ul
+            id="menumobile"
+            class="border opacity-0 rounded-3xl h-[45vh] w-[95vw] mx-auto flex flex-col justify-between border-zinc-950/10 dark:border-white/10 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100 overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300 p-8"
+          >
+            <div class="flex flex-col gap-5">
+              <li>
+                <a
+                  href="/src/pages/articles.html"
+                  class="flex hover:text-blue-600 duration-300"
+                  >Articles</a
+                >
+              </li>
 
-	   <!-- Menu mobile -->
-	   <div
-		 class="fixed h-0 duration-150 lg:hidden overflow-hidden z-40 p-2 top-16 left-0 right-0 group-data-[state=active]:h-screen w-screen"
-	   >
-		 <!-- Menu mobile -->
-		 <ul
-		   id="menumobile"
-		   class="border opacity-0 rounded-3xl h-[45vh] w-[95vw] mx-auto flex flex-col justify-between border-zinc-950/10 dark:border-white/10 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100 overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300 p-8"
-		 >
-		   <div class="flex flex-col gap-5">
-			 <li>
-			   <a
-				 href="/src/pages/articles.html"
-				 class="flex hover:text-blue-600 duration-300"
-				 >Articles</a
-			   >
-			 </li>
+              <li>
+                <a
+                  href="/src/pages/about.html"
+                  class="flex hover:text-blue-600 duration-300"
+                  >A propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/pages/contact.html"
+                  class="flex hover:text-blue-600 duration-300"
+                  >Contact</a
+                >
+              </li>
+            </div>
 
-			 <li>
-			   <a
-				 href="/src/pages/about.html"
-				 class="flex hover:text-blue-600 duration-300"
-				 >A propos</a
-			   >
-			 </li>
-			 <li>
-			   <a
-				 href="/src/pages/contact.html"
-				 class="flex hover:text-blue-600 duration-300"
-				 >Contact</a
-			   >
-			 </li>
-		   </div>
+            <!-- Btn action -->
+            <li
+              class="w-full mt-6 border-t border-zinc-950/10 dark:border-white/5 pt-4"
+            >
+              <div class="flex flex-col gap-4 lg:flex-row w-full items-center">
+                <a
+                  href="/src/pages/login.html"
+                  class="p-2 hover:bg-zinc-100 border border-zinc-950/5 dark:border-white/5 dark:hover:bg-white/5 duration-300 rounded-full active:scale-90 w-full justify-center text-sm flex"
+                >
+                  Log in
+                </a>
+                <a
+                  href="/src/pages/register.html"
+                  class="p-2 hover:bg-blue-500 duration-300 active:scale-90 active:bg-blue-800 w-full justify-center flex rounded-full bg-blue-600 text-white text-sm"
+                >
+                  <span>Sign up</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-		   <!-- Btn action -->
-		   <li
-			 class="w-full mt-6 border-t border-zinc-950/10 dark:border-white/5 pt-4"
-		   >
-			 <div class="flex flex-col gap-4 lg:flex-row w-full items-center">
-			   <a
-				 href="/src/pages/login.html"
-				 class="p-2 hover:bg-zinc-100 border border-zinc-950/5 dark:border-white/5 dark:hover:bg-white/5 duration-300 rounded-full active:scale-90 w-full justify-center text-sm flex"
-			   >
-				 Log in
-			   </a>
-			   <a
-				 href="/src/pages/register.html"
-				 class="p-2 hover:bg-blue-500 duration-300 active:scale-90 active:bg-blue-800 w-full justify-center flex rounded-full bg-blue-600 text-white text-sm"
-			   >
-				 <span>Sign up</span>
-			   </a>
-			 </div>
-		   </li>
-		 </ul>
-	   </div>
+        <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2">
+            <!-- Menu ordinateur -->
+            <ul
+              class="hidden overflow-hidden lg:flex lg:items-center *:hover:text-blue-600 *:duration-300 *:text-zinc-800/80 *:dark:text-white/70 *:font-light *:text-sm lg:gap-4 pr-4"
+            >
+              <li><a href="/src/pages/articles.html">Articles</a></li>
+              <li><a href="/src/pages/about.html">A propos</a></li>
+              <li><a href="/src/pages/contact.html">Contact</a></li>
+            </ul>
 
-	   <div class="flex items-center gap-2">
-		 <div class="flex items-center gap-2">
-		   <!-- Menu ordinateur -->
-		   <ul
-			 class="hidden overflow-hidden lg:flex lg:items-center *:hover:text-blue-600 *:duration-300 *:text-zinc-800/80 *:dark:text-white/70 *:font-light *:text-sm lg:gap-4 pr-4"
-		   >
-			 <li><a href="/src/pages/articles.html">Articles</a></li>
-			 <li><a href="/src/pages/about.html">A propos</a></li>
-			 <li><a href="/src/pages/contact.html">Contact</a></li>
-		   </ul>
+            <div
+              class="w-0.5 hidden lg:flex h-6 bg-zinc-950/10 dark:bg-white/10 rounded-full"
+            ></div>
 
-		   <div
-			 class="w-0.5 hidden lg:flex h-6 bg-zinc-950/10 dark:bg-white/10 rounded-full"
-		   ></div>
+            <button id="toggleButton" class="p-2 pl-4 hover:cursor-pointer">
+              <svg
+                id="moonIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 hover:text-blue-950 duration-300 hover:rotate-12"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                />
+              </svg>
 
-		   <button id="toggleButton" class="p-2 pl-4 hover:cursor-pointer">
-			 <svg
-			   id="moonIcon"
-			   xmlns="http://www.w3.org/2000/svg"
-			   fill="none"
-			   viewBox="0 0 24 24"
-			   stroke-width="1.5"
-			   stroke="currentColor"
-			   class="size-5 hover:text-blue-950 duration-300 hover:rotate-12"
-			 >
-			   <path
-				 stroke-linecap="round"
-				 stroke-linejoin="round"
-				 d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-			   />
-			 </svg>
+              <svg
+                id="sunIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 hover:text-yellow-600 duration-300 hover:rotate-12"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+            </button>
+            <!-- Btn action -->
+            <div class="lg:flex hidden flex-col gap-4 lg:flex-row items-center">
+              <a
+                href="/src/pages/login.html"
+                class="p-1 px-6 dark:text-white/70 font-light dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 text-sm duration-300 rounded-full active:scale-90"
+              >
+                Log in
+              </a>
+              <a
+                href="/src/pages/register.html"
+                class="p-1 px-6 hover:bg-blue-500 duration-300 active:scale-90 active:bg-blue-800 rounded-full font-light border dark:border-white/5 border-zinc-950/5 bg-blue-600 text-sm text-white"
+              >
+                <span>Sign up</span>
+              </a>
+            </div>
+          </div>
 
-			 <svg
-			   id="sunIcon"
-			   xmlns="http://www.w3.org/2000/svg"
-			   fill="none"
-			   viewBox="0 0 24 24"
-			   stroke-width="1.5"
-			   stroke="currentColor"
-			   class="size-5 hover:text-yellow-600 duration-300 hover:rotate-12"
-			 >
-			   <path
-				 stroke-linecap="round"
-				 stroke-linejoin="round"
-				 d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-			   />
-			 </svg>
-		   </button>
-		   <!-- Btn action -->
-		   <div class="lg:flex hidden flex-col gap-4 lg:flex-row items-center">
-			 <a
-			   href="/src/pages/login.html"
-			   class="p-1 px-6 dark:text-white/70 font-light dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-white/5 text-sm duration-300 rounded-full active:scale-90"
-			 >
-			   Log in
-			 </a>
-			 <a
-			   href="/src/pages/register.html"
-			   class="p-1 px-6 hover:bg-blue-500 duration-300 active:scale-90 active:bg-blue-800 rounded-full font-light border dark:border-white/5 border-zinc-950/5 bg-blue-600 text-sm text-white"
-			 >
-			   <span>Sign up</span>
-			 </a>
-		   </div>
-		 </div>
+          <!-- umburger menu -->
+          <div class="flex lg:hidden">
+            <button
+              id="menu-btn"
+              aria-label="open menu"
+              class="btn variant-ghost sz-md icon-only relative z-20 -mr-2.5 block cursor-pointer lg:hidden hover:bg-zinc-950/5 p-2 rounded-full"
+            >
+              <svg
+                class="text-title m-auto size-6 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-180 group-data-[state=active]:scale-0 group-data-[state=active]:opacity-0"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 9h16.5m-16.5 6.75h16.5"
+                ></path>
+              </svg>
+              <svg
+                class="text-title absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-		 <!-- umburger menu -->
-		 <div class="flex lg:hidden">
-		   <button
-			 id="menu-btn"
-			 aria-label="open menu"
-			 class="btn variant-ghost sz-md icon-only relative z-20 -mr-2.5 block cursor-pointer lg:hidden hover:bg-zinc-950/5 p-2 rounded-full"
-		   >
-			 <svg
-			   class="text-title m-auto size-6 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-180 group-data-[state=active]:scale-0 group-data-[state=active]:opacity-0"
-			   xmlns="http://www.w3.org/2000/svg"
-			   fill="none"
-			   viewBox="0 0 24 24"
-			   stroke-width="1.5"
-			   stroke="currentColor"
-			 >
-			   <path
-				 stroke-linecap="round"
-				 stroke-linejoin="round"
-				 d="M3.75 9h16.5m-16.5 6.75h16.5"
-			   ></path>
-			 </svg>
-			 <svg
-			   class="text-title absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 transition-[transform,opacity] duration-300 group-data-[state=active]:rotate-0 group-data-[state=active]:scale-100 group-data-[state=active]:opacity-100"
-			   xmlns="http://www.w3.org/2000/svg"
-			   fill="none"
-			   viewBox="0 0 24 24"
-			   stroke-width="1.5"
-			   stroke="currentColor"
-			 >
-			   <path
-				 stroke-linecap="round"
-				 stroke-linejoin="round"
-				 d="M6 18 18 6M6 6l12 12"
-			   ></path>
-			 </svg>
-		   </button>
-		 </div>
-	   </div>
-	 </nav>
-   </header>
+    <main class="container mx-auto px-4 py-24 dark:text-white">
+      <!-- Ton code start here -->
+      <!-- Profil info -->
+      <section
+        class="container mx-auto xl:px-52 py-10 lg:py-24 dark:text-white"
+      >
+        <div
+          class="md:px-14 py-8 md:border border-gray-100 dark:border-white/5 rounded-lg flex flex-col gap-4"
+        >
+          <div class="">
+            <div class="md:flex md:justify-between">
+              <div
+                class="flex flex-col md:flex-row md:items-center mt-4 mb-4 gap-9"
+              >
+                <div class="md:flex md:items-start">
+                  <a href="#">
+                    <img
+                      src="../assets/author/JulesM.png"
+                      alt="Author"
+                      class="w-36 h-36 rounded-full flex items-center justify-center"
+                    />
+                  </a>
+                </div>
+                <div class="flex flex-col">
+                  <h1 class="text-2xl text-black dark:text-white font-bold p-0">
+                    Jules MUKADI
+                  </h1>
+                  <span
+                    class="capitalize mt-3 text-zinc-950/70 dark:text-white/80"
+                    >frontEnd developer</span
+                  >
+                </div>
+              </div>
 
-	<main class="container mx-auto px-4 py-24 dark:text-white">
+              <div class="flex items-center gap-2">
+                <!-- Bouton Edit -->
+                <a
+                  href="#"
+                  class="bg-blue-700 hover:bg-blue-500 duration-300 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium"
+                >
+                  <ion-icon name="pencil-outline" class="text-base"></ion-icon>
+                  <span>Edit</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-3 px-12 flex justify-center capitalize text-zinc-600 border border-gray-100 rounded-lg dark:bg-zinc-950 dark:border-white/5"
+          >
+            <h5 class="">member since feb, 2025</h5>
+          </div>
 
-		<!-- Ton code start here -->
-		<!-- Profil info -->
-		<section class="container mx-auto xl:px-52 py-10 lg:py-24 dark:text-white">
-			<div class="md:px-14 py-8  md:border border-gray-100 dark:border-white/5 rounded-lg flex flex-col gap-4">
-				<div class="">
-					<div class="md:flex md:justify-between">
-						<div class="flex flex-col md:flex-row md:items-center mt-4 mb-4 gap-9">
-							<div class="md:flex md:items-start">
-								<a href="#">
-									<img src="../assets/author/JulesM.png" alt="Author"
-										class="w-36 h-36 rounded-full flex items-center justify-center">
-								</a>
-							</div>
-							<div class="flex flex-col">
-								<h1 class="text-2xl text-black dark:text-white font-bold p-0">Jules MUKADI</h1>
-								<span class="capitalize mt-3 text-zinc-950/70 dark:text-white/80">frontEnd developer</span>
-								
-							</div>
-						</div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div
+              class="border border-gray-100 dark:border-white/5 rounded-lg p-6"
+            >
+              <h2 class="capitalize font-bold mb-6">about me</h2>
+              <button
+                class="inline-flex hover:cursor-pointer hover:bg-zinc-900 dark:hover:bg-white/5 hover:text-white duration-300 items-center gap-2 border border-gray-100 dark:border-white/5 rounded-full p-2 px-5 w-fit"
+              >
+                <ion-icon name="add" class="size-6"></ion-icon>
+                <span class="">Add Bio</span>
+              </button>
 
-						<div class="flex items-center gap-2">
-						
-							<!-- Bouton Edit -->
-							<a href="#" class="bg-blue-700 hover:bg-blue-500 duration-300 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium">
-								<ion-icon name="pencil-outline" class="text-base"></ion-icon>
-								<span>Edit</span>
-							</a>
-						</div>						
-						
-					</div>
-				</div>
-				<div
-					class="p-3 px-12 flex justify-center capitalize text-zinc-600 border border-gray-100 rounded-lg dark:bg-zinc-950 dark:border-white/5">
-					<h5 class="">member since feb, 2025</h5>
-				</div>
-			
-				<div class="grid md:grid-cols-2 gap-8">
-					<div class="border border-gray-100 dark:border-white/5 rounded-lg p-6">
-						<h2 class="capitalize font-bold mb-6">about me</h2>
-						<button class="inline-flex hover:cursor-pointer  hover:bg-zinc-900 dark:hover:bg-white/5 hover:text-white duration-300 items-center gap-2 border border-gray-100 dark:border-white/5 rounded-full p-2 px-5 w-fit">
-							<ion-icon name="add" class="size-6"></ion-icon>
-							<span class="">Add Bio</span>
-						</button>
-						
-						<p class="italic text-zinc-600 mt-4">Your bio is empty. Tell the world you are you writing a
-							short description about you.</p>
-					</div>
-					<div class="border border-gray-100 dark:border-white/5 rounded-lg p-6">
-						<h2 class="capitalize mb-6">my tech stack</h2>
-						<button class="inline-flex hover:cursor-pointer  hover:bg-zinc-900 dark:hover:bg-white/5 hover:text-white  duration-300 items-center gap-2 border border-gray-100 dark:border-white/5 rounded-full p-2 px-5 w-fit">
-								<ion-icon name="add" class="size-6"></ion-icon>
-								<span class="">Add your skils</span>
-							</button>
-					</div>
-					<div class="border border-gray-100 dark:border-white/5 rounded-lg p-6">
-						<h2 class="mb-6">I am available for</h2>
-						<button class="inline-flex hover:cursor-pointer hover:bg-zinc-900 dark:hover:bg-white/5 hover:text-white duration-300 items-center gap-2 border border-gray-100 dark:border-white/5 rounded-full p-2 px-5 w-fit">
-								<ion-icon name="add" class="size-6"></ion-icon>
-								<span class="">Add Available For</span>
-						</button>
-					</div>
-				</div>
-				
-				
-			</div>
-		</section>
+              <p class="italic text-zinc-600 mt-4">
+                Your bio is empty. Tell the world you are you writing a short
+                description about you.
+              </p>
+            </div>
+            <div
+              class="border border-gray-100 dark:border-white/5 rounded-lg p-6"
+            >
+              <h2 class="capitalize mb-6">my tech stack</h2>
+              <button
+                class="inline-flex hover:cursor-pointer hover:bg-zinc-900 dark:hover:bg-white/5 hover:text-white duration-300 items-center gap-2 border border-gray-100 dark:border-white/5 rounded-full p-2 px-5 w-fit"
+              >
+                <ion-icon name="add" class="size-6"></ion-icon>
+                <span class="">Add your skils</span>
+              </button>
+            </div>
+            <div
+              class="border border-gray-100 dark:border-white/5 rounded-lg p-6"
+            >
+              <h2 class="mb-6">I am available for</h2>
+              <button
+                class="inline-flex hover:cursor-pointer hover:bg-zinc-900 dark:hover:bg-white/5 hover:text-white duration-300 items-center gap-2 border border-gray-100 dark:border-white/5 rounded-full p-2 px-5 w-fit"
+              >
+                <ion-icon name="add" class="size-6"></ion-icon>
+                <span class="">Add Available For</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-	</main>
+    <!-- Le footer de la page -->
+    <footer
+      class="footer py-8 lg:h-[60vh] border-t border-dashed border-zinc-950/10 dark:border-white/5 relative overflow-hidden"
+    >
+      <div
+        class="container relative z-40 mx-auto px-4 mt-4 h-full flex flex-col justify-between"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
+        >
+          <div class="lg:col-span-2">
+            <!-- logo officiel du site -->
+            <div class="">
+              <a
+                href="/index.html"
+                class="text-lg font-light flex gap-1 items-center"
+              >
+                <span class="h-max grid place-content-center">
+                  <i class="bx bx-infinite text-4xl"></i>
+                </span>
+                <div>
+                  <span class=""
+                    >infinity<span class="text-blue-700 font-semibold"
+                      >Tech</span
+                    ></span
+                  >
+                </div>
+              </a>
+            </div>
+            <p
+              class="dark:text-white/80 mt-3 text-zinc-800 font-light text-balance"
+            >
+              L'obectif ici est de mettre a jour la connaissance a tous, dans
+              tout les domaine multidsciplainaire de la vie liee a la
+              Technologie
+            </p>
+          </div>
+          <div>
+            <h4 class="font-medium mb-4">Liens rapides</h4>
+            <ul
+              class="dark:text-white/75 text-zinc-800 font-light *:hover:text-blue-600 *:duration-300"
+            >
+              <li><a href="/index.html">Accueil</a></li>
+              <li><a href="/src/pages/about.html">À propos</a></li>
+              <li><a href="/src/pages/articles.html">Articles</a></li>
+              <li><a href="/src/pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
 
-	 <!-- Le footer de la page -->
-	 <footer
-	 class="footer py-8 lg:h-[60vh] border-t border-dashed border-zinc-950/10 dark:border-white/5 relative overflow-hidden"
-   >
-	 <div
-	   class="container relative z-40 mx-auto px-4 mt-4 h-full flex flex-col justify-between"
-	 >
-	   <div
-		 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
-	   >
-		 <div class="lg:col-span-2">
-		   <!-- logo officiel du site -->
-		   <div class="">
-			 <a
-			   href="/index.html"
-			   class="text-lg font-light flex gap-1 items-center"
-			 >
-			   <span class="h-max grid place-content-center">
-				 <i class="bx bx-infinite text-4xl"></i>
-			   </span>
-			   <div>
-				 <span class=""
-				   >infinity<span class="text-blue-700 font-semibold"
-					 >Tech</span
-				   ></span
-				 >
-			   </div>
-			 </a>
-		   </div>
-		   <p class="dark:text-white/80 mt-3 text-zinc-800 font-light text-balance">
-			 L'obectif ici est de mettre a jour la connaissance a tous, dans
-			 tout les domaine multidsciplainaire de la vie liee a la
-			 Technologie
-		   </p>
-		 </div>
-		 <div>
-		   <h4 class="font-medium mb-4">Liens rapides</h4>
-		   <ul
-			 class="dark:text-white/75 text-zinc-800 font-light *:hover:text-blue-600 *:duration-300"
-		   >
-			 <li><a href="/index.html">Accueil</a></li>
-			 <li><a href="/src/pages/about.html">À propos</a></li>
-			 <li><a href="/src/pages/articles.html">Articles</a></li>
-			 <li><a href="/src/pages/contact.html">Contact</a></li>
-		   </ul>
-		 </div>
+          <div>
+            <div>
+              <div>
+                <span>Email :</span>
+                <a
+                  class="dark:text-white/70 text-zinc-800 font-light"
+                  href="mailto:info@gmailcom"
+                  >info@gmailcom</a
+                >
+              </div>
+              <div>
+                <span>Phone :</span>
+                <a
+                  class="dark:text-white/70 text-zinc-800 font-light"
+                  href="tel:+243 822717275"
+                  >+243 822717275</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
-		 <div>
-		   <div>
-			 <div>
-			   <span>Email :</span>
-			   <a
-				 class="dark:text-white/70 text-zinc-800 font-light"
-				 href="mailto:info@gmailcom"
-				 >info@gmailcom</a
-			   >
-			 </div>
-			 <div>
-			   <span>Phone :</span>
-			   <a
-				 class="dark:text-white/70 text-zinc-800 font-light"
-				 href="tel:+243 822717275"
-				 >+243 822717275</a
-			   >
-			 </div>
-		   </div>
-		 </div>
-	   </div>
+        <div>
+          <hr
+            class="mt-10 border-zinc-950/10 dark:border-white/5 border-dashed"
+          />
 
-	   <div>
-		 <hr
-		   class="mt-10 border-zinc-950/10 dark:border-white/5 border-dashed"
-		 />
+          <div
+            class="flex pt-4 flex-col lg:flex-row justify-between items-center"
+          >
+            <div class="flex flex-col items-center lg:items-start gap-2">
+              <ul class="flex space-x-4">
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="text-2xl"
+                  >
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    class="text-2xl"
+                  >
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="text-2xl"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    class="text-2xl"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="dark:text-white/60 font-light mt-2 lg:mt-0 text-center lg:text-left"
+            >
+              <p>
+                Copyright &copy; 2025 INFINITY-TECH. <br class="lg:hidden" />
+                Tous droits réservés.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute size-[75rem] bg-gradient-to-t from-blue-600/10 via-blue-400/20 to-transparent blur-3xl -bottom-[50rem] z-0 rounded-full left-[10%] opacity-55"
+      ></div>
 
-		 <div
-		   class="flex pt-4 flex-col lg:flex-row justify-between items-center"
-		 >
-		   <div class="flex flex-col items-center lg:items-start gap-2">
-			 <ul class="flex space-x-4">
-			   <li>
-				 <a
-				   href="https://www.facebook.com/"
-				   target="_blank"
-				   class="text-2xl"
-				 >
-				   <ion-icon name="logo-facebook"></ion-icon>
-				 </a>
-			   </li>
-			   <li>
-				 <a
-				   href="https://www.twitter.com/"
-				   target="_blank"
-				   class="text-2xl"
-				 >
-				   <ion-icon name="logo-twitter"></ion-icon>
-				 </a>
-			   </li>
-			   <li>
-				 <a
-				   href="https://www.instagram.com/"
-				   target="_blank"
-				   class="text-2xl"
-				 >
-				   <ion-icon name="logo-instagram"></ion-icon>
-				 </a>
-			   </li>
-			   <li>
-				 <a
-				   href="https://www.linkedin.com/"
-				   target="_blank"
-				   class="text-2xl"
-				 >
-				   <ion-icon name="logo-linkedin"></ion-icon>
-				 </a>
-			   </li>
-			 </ul>
-		   </div>
-		   <div
-			 class="dark:text-white/60 font-light mt-2 lg:mt-0 text-center lg:text-left"
-		   >
-			 <p>
-			   Copyright &copy; 2025 INFINITY-TECH. <br class="lg:hidden" />
-			   Tous droits réservés.
-			 </p>
-		   </div>
-		 </div>
-	   </div>
-	 </div>
-	 <div
-	   class="absolute size-[75rem] bg-gradient-to-t from-blue-600/10 via-blue-400/20 to-transparent blur-3xl -bottom-[50rem] z-0 rounded-full left-[10%] opacity-55"
-	 ></div>
+      <div
+        class="absolute size-[55rem] bg-gradient-to-t from-blue-600 via-blue-400 to-transparent blur-3xl -bottom-[35rem] z-0 rounded-full left-[20%] opacity-15"
+      ></div>
+    </footer>
 
-	 <div
-	   class="absolute size-[55rem] bg-gradient-to-t from-blue-600 via-blue-400 to-transparent blur-3xl -bottom-[35rem] z-0 rounded-full left-[20%] opacity-15"
-	 ></div>
-   </footer>
-
-
-	<script type="module" src="/src/main.js"></script>
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script type="module" src="/src/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
