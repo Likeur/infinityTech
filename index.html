@@ -21,6 +21,8 @@
       id="header"
       class="fixed w-screen left-0 z-50 bg-white/80 lg:bg-transparent dark:bg-zinc-950/80 lg:dark:bg-transparent lg:backdrop-blur-none right-0 group p-3 px-8 lg:px-6 border-b lg:border-none lg:w-[75vw] lg:mx-auto border-dashed border-zinc-950/5 dark:border-white/5 duration-300 lg:top-4"
     >
+      <!-- Nav overlay -->
+
       <nav class="flex items-center justify-between">
         <!-- logo officiel du site -->
         <div class="">
@@ -42,53 +44,58 @@
         </div>
 
         <!-- Menu mobile -->
-        <ul
-          id="menumobile"
-          class="fixed scale-y-0 border-b border-zinc-950/10 dark:border-white/5 opacity-0 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100 lg:hidden overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300 top-16 p-8 flex flex-col w-screen"
-        >
-          <li>
-            <a
-              href="/src/pages/articles.html"
-              class="flex hover:text-blue-600 duration-300"
-              >Articles</a
-            >
-          </li>
-
-          <li>
-            <a
-              href="/src/pages/about.html"
-              class="mt-3 flex hover:text-blue-600 duration-300"
-              >A propos</a
-            >
-          </li>
-          <li>
-            <a
-              href="/src/pages/contact.html"
-              class="mt-3 flex hover:text-blue-600 duration-300"
-              >Contact</a
-            >
-          </li>
-
-          <!-- Btn action -->
-          <li
-            class="w-full mt-6 border-t border-zinc-950/10 dark:border-white/5 pt-4"
+        <div class="fixed h-0 duration-150 lg:hidden overflow-hidden z-40 p-2 top-16 left-0 right-0 group-data-[state=active]:h-screen bg-white/5 dark:bg-zinc-950/5 backdrop-blur-3xl w-screen pointer-events-none">
+          <!-- Menu mobile -->
+          <ul
+            id="menumobile"
+            class=" border opacity-0 rounded-3xl h-[50vh] w-[95vw] mx-auto flex flex-col justify-between border-zinc-950/10 dark:border-white/10 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100  overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300  p-8"
           >
-            <div class="flex flex-col gap-4 lg:flex-row w-full items-center">
-              <a
-                href="/src/pages/login.html"
-                class="p-2 hover:bg-zinc-100 dark:hover:bg-white/5 duration-300 rounded-full active:scale-90 w-full justify-center text-sm flex"
-              >
-                Log in
-              </a>
-              <a
-                href="/src/pages/register.html"
-                class="p-2 hover:bg-blue-500 duration-300 active:scale-90 active:bg-blue-800 w-full justify-center flex rounded-full bg-blue-600 text-white text-sm"
-              >
-                <span>Sign up</span>
-              </a>
-            </div>
-          </li>
-        </ul>
+            <li>
+              <li>
+                <a
+                  href="/src/pages/articles.html"
+                  class="flex hover:text-blue-600 duration-300"
+                  >Articles</a
+                >
+              </li>
+  
+              <li>
+                <a
+                  href="/src/pages/about.html"
+                  class="mt-3 flex hover:text-blue-600 duration-300"
+                  >A propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/pages/contact.html"
+                  class="mt-3 flex hover:text-blue-600 duration-300"
+                  >Contact</a
+                >
+              </li>
+            </li>
+
+            <!-- Btn action -->
+            <li
+              class="w-full mt-6 border-t border-zinc-950/10 dark:border-white/5 pt-4"
+            >
+              <div class="flex flex-col gap-4 lg:flex-row w-full items-center">
+                <a
+                  href="/src/pages/login.html"
+                  class="p-2 hover:bg-zinc-100 dark:hover:bg-white/5 duration-300 rounded-full active:scale-90 w-full justify-center text-sm flex"
+                >
+                  Log in
+                </a>
+                <a
+                  href="/src/pages/register.html"
+                  class="p-2 hover:bg-blue-500 duration-300 active:scale-90 active:bg-blue-800 w-full justify-center flex rounded-full bg-blue-600 text-white text-sm"
+                >
+                  <span>Sign up</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
 
         <div class="flex items-center gap-2">
           <div class="flex items-center gap-2">
@@ -197,7 +204,7 @@
     </header>
 
     <!-- Contenue du site ici -->
-    <main class="relative z-30">
+    <main class="relative z-20">
       <!-- Le contenue principal ici -->
 
       <!-- La hero section ici -->
@@ -572,7 +579,9 @@
               class="p-2 border rounded-full flex w-max items-center justify-between gap-5 group border-zinc-950/10 dark:border-white/5 hover:bg-blue-600/5 dark:hover:bg-white/5 duration-300"
             >
               <span class="pl-2 font-light">View all post</span>
-              <span class="size-10 bg-blue-600/5 dark:bg-white/5 grid place-content-center rounded-full border dark:border-white/5 border-zinc-950/5 group-hover:-rotate-45 duration-500">
+              <span
+                class="size-10 bg-blue-600/5 dark:bg-white/5 grid place-content-center rounded-full border dark:border-white/5 border-zinc-950/5 group-hover:-rotate-45 duration-500"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
