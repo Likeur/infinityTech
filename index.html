@@ -44,13 +44,13 @@
         </div>
 
         <!-- Menu mobile -->
-        <div class="fixed h-0 duration-150 lg:hidden overflow-hidden z-40 p-2 top-16 left-0 right-0 group-data-[state=active]:h-screen bg-white/5 dark:bg-zinc-950/5 backdrop-blur-3xl w-screen pointer-events-none">
+        <div class="fixed h-0 duration-150 lg:hidden overflow-hidden z-40 p-2 top-16 left-0 right-0 group-data-[state=active]:h-screen w-screen">
           <!-- Menu mobile -->
           <ul
             id="menumobile"
-            class=" border opacity-0 rounded-3xl h-[50vh] w-[95vw] mx-auto flex flex-col justify-between border-zinc-950/10 dark:border-white/10 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100  overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300  p-8"
+            class=" border opacity-0 rounded-3xl h-[45vh] w-[95vw] mx-auto flex flex-col justify-between border-zinc-950/10 dark:border-white/10 group-data-[state=active]:opacity-100 origin-top group-data-[state=active]:scale-100  overflow-hidden bg-white dark:bg-zinc-950 z-50 left-0 right-0 duration-300  p-8"
           >
-            <li>
+            <div class="flex flex-col gap-5">
               <li>
                 <a
                   href="/src/pages/articles.html"
@@ -62,18 +62,18 @@
               <li>
                 <a
                   href="/src/pages/about.html"
-                  class="mt-3 flex hover:text-blue-600 duration-300"
+                  class="flex hover:text-blue-600 duration-300"
                   >A propos</a
                 >
               </li>
               <li>
                 <a
                   href="/src/pages/contact.html"
-                  class="mt-3 flex hover:text-blue-600 duration-300"
+                  class="flex hover:text-blue-600 duration-300"
                   >Contact</a
                 >
               </li>
-            </li>
+            </div>
 
             <!-- Btn action -->
             <li
@@ -82,7 +82,7 @@
               <div class="flex flex-col gap-4 lg:flex-row w-full items-center">
                 <a
                   href="/src/pages/login.html"
-                  class="p-2 hover:bg-zinc-100 dark:hover:bg-white/5 duration-300 rounded-full active:scale-90 w-full justify-center text-sm flex"
+                  class="p-2 hover:bg-zinc-100 border border-zinc-950/5 dark:border-white/5 dark:hover:bg-white/5 duration-300 rounded-full active:scale-90 w-full justify-center text-sm flex"
                 >
                   Log in
                 </a>
