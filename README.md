@@ -13,7 +13,7 @@ Ce projet est un site web communautaire doté d'un espace blog pour la communaut
 
 
 
-## 🚀 Fonctionnalités clé 
+## 🚀 Fonctionnalités clées
 
 - **Interface moderne et responsive** : Un design clair et adaptatif pour une navigation fluide et intuitive .
 - **Catégories d'actualités** : Organisation des articles en différentes sections (ex. : innovations, gadgets, logiciels, intelligence artificielle, etc.).
@@ -24,7 +24,7 @@ Ce projet est un site web communautaire doté d'un espace blog pour la communaut
 
 - **HTML** : Pour la structure du site.
 - **TailwindCSS** : Pour la mise en forme et l'esthétique.
-- **Javascript & Firebase** : backend 
+- **Javascript & Firebase** : backend et interactions
 - **Git & GitHub** : Pour la gestion du code et la collaboration entre contributeurs.
 - **Vite js** : Bundler
 - **Boxicons and heroicons** : for icons
