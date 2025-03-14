@@ -80,3 +80,15 @@ window.addEventListener('scroll', () => {
     header.classList.remove('bg-zinc-300/30', 'shadow-lg', 'lg:mt-6', 'lg:rounded-full', 'backdrop-blur-2xl', 'lg:border-b', 'lg:dark:border-white/40', 'lg:border-zinc-950/40', 'lg:w-[70vw]');
   }
 });
+
+// Gestion affichage de l'image dans edit-profil-info.html
+document.getElementById("profileImage").addEventListener("change", function(event) {
+  const file = event.target.files[0];
+  if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+          document.getElementById("previewImage").src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+  }
+});
