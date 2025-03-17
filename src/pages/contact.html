@@ -259,51 +259,79 @@
           </div>
         </div>
         <!-- Contact Form -->
-        <div class="py-6">
-          <form class="bg-white dark:bg-transparent p-8 w-full">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div>
-                <label
-                  class="block text-zinc-700 dark:text-zinc-300 text-sm font-medium"
-                  >Nom</label
-                >
-                <input
-                  type="text"
-                  class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2"
-                />
-              </div>
-              <div>
-                <label
-                  class="block text-zinc-700 dark:text-zinc-300 text-sm font-medium"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2"
-                />
-              </div>
-              <div>
-                <label
-                  class="block text-zinc-700 dark:text-zinc-300 text-sm font-medium"
-                  >Telephone (optional)</label
-                >
-                <input
-                  type="text"
-                  class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2"
-                />
-              </div>
-            </div>
+				<div class="py-6">
+					<form class="bg-white dark:bg-transparent p-8 w-full">
+						<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+							<div class="form-control relative">
+								<label
+									class="absolute left-0 top-1/2 transform -translate-y-1/2 text-zinc-400 transition-all duration-200 pointer-events-none"
+									>Nom</label
+								>
+								<input
+									type="text"
+									class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2 pt-3" />
+							</div>
+							<div class="form-control relative">
+								<label
+									class="absolute left-0 top-1/2 transform -translate-y-1/2 text-zinc-400 transition-all duration-200 pointer-events-none"
+									>Email</label
+								>
+								<input
+									type="email"
+									class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2 pt-3" />
+							</div>
+							<div class="form-control relative">
+								<label
+									class="absolute left-0 top-1/2 transform -translate-y-1/2 text-zinc-400 transition-all duration-200 pointer-events-none"
+									>Telephone (optional)</label
+								>
+								<input
+									type="text"
+									pattern="^\+?[0-9]{1,4}?[-.\s]?[0-9]{1,15}$"
+									class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 py-2 pt-3" />
+							</div>
+						</div>
 
-            <div class="mt-6">
-              <label
-                class="block text-zinc-700 dark:text-zinc-300 text-sm font-medium"
-                >Message</label
-              >
-              <textarea
-                class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 py-2 h-24"
-              ></textarea>
-            </div>
+						<div class="mt-6 form-control relative">
+							<label
+								class="absolute left-0 top-5 transform -translate-y-1/2 text-zinc-400 transition-all duration-200 pointer-events-none"
+								>Message</label
+							>
+							<textarea
+								class="w-full bg-transparent border-b border-zinc-300 dark:border-zinc-600 text-zinc-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 py-2 h-28"></textarea>
+						</div>
 
+						<div class="mt-6">
+							<button
+								type="submit"
+								class="flex items-center gap-3 bg-blue-600 dark:bg-blue-600 text-white px-6 py-3 rounded-full w-full md:w-auto hover:bg-blue-500 dark:hover:bg-blue-500 transition duration-300 cursor-pointer">
+								<span>Laissez-nous un message</span>
+								<ion-icon name="arrow-forward-outline"></ion-icon>
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- Contact infos -->
+			<section
+				class="py-18 dark:bg-transparent overflow-hidden px-8 md:px-6 relative">
+				<img
+					src="/src/assets/bg_contact_infos.svg"
+					class="absolute z-0 mix-blend-difference h-full w-full object-cover inset-0"
+					alt="" />
+				<div
+					class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+					<!-- Texte principal -->
+					<div class="md:col-span-1">
+						<h3
+							class="text-zinc-600 dark:text-zinc-400 text-sm font-medium mb-3 uppercase">
+							Nos contacts
+						</h3>
+						<h2
+							class="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mt-2 text-balance">
+							Nous sommes toujours heureux de vous aider
+						</h2>
+					</div>
             <div class="mt-6">
               <button
                 type="submit"
