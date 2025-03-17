@@ -75,10 +75,17 @@ window.addEventListener('scroll', () => {
 			'shadow-lg',
 			'lg:mt-6',
 			'lg:rounded-full',
+<<<<<<< HEAD
 			'backdrop-blur-2xl',
 			'lg:border-b',
 			'lg:dark:border-white/40',
 			'lg:border-zinc-950/40',
+=======
+			'backdrop-blur-3xl',
+			'lg:border-b',
+			'lg:dark:border-white/10',
+			'lg:border-zinc-950/10',
+>>>>>>> main
 			'lg:w-[70vw]'
 		)
 		header.classList.remove(
@@ -112,6 +119,7 @@ window.addEventListener('scroll', () => {
 	}
 })
 
+<<<<<<< HEAD
 //Form Wave animation
 document.addEventListener('DOMContentLoaded', () => {
 	const formControls = document.querySelectorAll('.form-control')
@@ -156,3 +164,100 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 })
+=======
+/************* Article display management ******************/
+document.addEventListener('DOMContentLoaded', () => {
+	const tabs = document.querySelectorAll('.tab-btn')
+	const articles = document.querySelectorAll('.article-category')
+	const select = document.getElementById('Tab') // Sélecteur du menu déroulant
+
+	if (!tabs.length || !articles.length || !select) return
+
+	// Fonction pour afficher les articles en fonction de la catégorie
+	function renderArticles(category) {
+		articles.forEach((article) => {
+			if (category === 'all' || article.dataset.category === category) {
+				article.classList.remove('hidden')
+			} else {
+				article.classList.add('hidden')
+			}
+		})
+	}
+
+	// Par défaut, afficher tous les articles
+	renderArticles('all')
+
+	// Gestion des clics sur les onglets
+	tabs.forEach((tab) => {
+		tab.addEventListener('click', () => {
+			// Retirer la classe active de tous les onglets
+			tabs.forEach((t) =>
+				t.classList.remove('text-blue-600', 'border-b-2', 'border-blue-600')
+			)
+
+			// Ajouter la classe active à l'onglet cliqué
+			tab.classList.remove('text-zinc-500', 'border-transparent')
+			tab.classList.add('text-blue-600', 'border-b-2', 'border-blue-600')
+
+			// Récupérer la catégorie de l'onglet cliqué
+			const category = tab.getAttribute('data-category') || 'all'
+
+			// Synchroniser la valeur du sélecteur avec la catégorie
+			select.value = category
+
+			// Afficher les articles correspondants
+			renderArticles(category)
+		})
+	})
+
+	// Gestion du changement de sélection dans le `select`
+	select.addEventListener('change', (event) => {
+		const category = event.target.value
+
+		// Mettre à jour la classe active des onglets
+		tabs.forEach((tab) => {
+			tab.classList.toggle(
+				'text-blue-600',
+				tab.getAttribute('data-category') === category
+			)
+			tab.classList.toggle(
+				'border-b-2',
+				tab.getAttribute('data-category') === category
+			)
+			tab.classList.toggle(
+				'border-blue-600',
+				tab.getAttribute('data-category') === category
+			)
+		})
+
+		// Afficher les articles correspondants
+		renderArticles(category)
+	})
+})
+/******************** End Articles display management ***********************/
+
+
+
+// Gestion affichage de l'image dans edit-profil-info.html
+document.getElementById("profileImage").addEventListener("change", function(event) {
+  const file = event.target.files[0];
+  if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+          document.getElementById("previewImage").src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+  }
+});
+
+document.getElementById("profileImage").addEventListener("change", function(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById("previewImage").src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+>>>>>>> main
