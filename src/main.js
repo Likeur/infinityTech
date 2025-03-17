@@ -75,17 +75,10 @@ window.addEventListener('scroll', () => {
 			'shadow-lg',
 			'lg:mt-6',
 			'lg:rounded-full',
-<<<<<<< HEAD
-			'backdrop-blur-2xl',
-			'lg:border-b',
-			'lg:dark:border-white/40',
-			'lg:border-zinc-950/40',
-=======
 			'backdrop-blur-3xl',
 			'lg:border-b',
 			'lg:dark:border-white/10',
 			'lg:border-zinc-950/10',
->>>>>>> main
 			'lg:w-[70vw]'
 		)
 		header.classList.remove(
@@ -119,52 +112,6 @@ window.addEventListener('scroll', () => {
 	}
 })
 
-<<<<<<< HEAD
-//Form Wave animation
-document.addEventListener('DOMContentLoaded', () => {
-	const formControls = document.querySelectorAll('.form-control')
-
-	formControls.forEach((control) => {
-		const label = control.querySelector('label')
-		const input = control.querySelector('input, textarea')
-
-		if (label && input) {
-			const originalText = label.innerText // Stocke le texte original
-
-			// Transformer le label en une série de <span>
-			label.innerHTML = originalText
-				.split('')
-				.map(
-					(letter, index) =>
-						`<span style="--delay:${index * 60}ms">${letter}</span>`
-				)
-				.join('')
-
-			const spans = label.querySelectorAll('span')
-
-			input.addEventListener('focus', () => {
-				spans.forEach((span, index) => {
-					span.style.transitionDelay = `${index * 60}ms`
-					span.style.transform = 'translateY(-100%)'
-					span.style.fontSize = '14px'
-					span.style.color = '#155dfc'
-				})
-			})
-
-			input.addEventListener('blur', () => {
-				if (input.value === '') {
-					spans.forEach((span, index) => {
-						span.style.transitionDelay = `${index * 60}ms`
-						span.style.transform = 'translateY(0)'
-						span.style.fontSize = '16px'
-						span.style.color = '#9f9fa9'
-					})
-				}
-			})
-		}
-	})
-})
-=======
 /************* Article display management ******************/
 document.addEventListener('DOMContentLoaded', () => {
 	const tabs = document.querySelectorAll('.tab-btn')
@@ -236,28 +183,74 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 /******************** End Articles display management ***********************/
 
-
-
 // Gestion affichage de l'image dans edit-profil-info.html
-document.getElementById("profileImage").addEventListener("change", function(event) {
-  const file = event.target.files[0];
-  if (file) {
-      const reader = new FileReader();
-      reader.onload = function(e) {
-          document.getElementById("previewImage").src = e.target.result;
-      };
-      reader.readAsDataURL(file);
-  }
-});
+document
+	.getElementById('profileImage')
+	.addEventListener('change', function (event) {
+		const file = event.target.files[0]
+		if (file) {
+			const reader = new FileReader()
+			reader.onload = function (e) {
+				document.getElementById('previewImage').src = e.target.result
+			}
+			reader.readAsDataURL(file)
+		}
+	})
 
-document.getElementById("profileImage").addEventListener("change", function(event) {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            document.getElementById("previewImage").src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-    }
-});
->>>>>>> main
+document
+	.getElementById('profileImage')
+	.addEventListener('change', function (event) {
+		const file = event.target.files[0]
+		if (file) {
+			const reader = new FileReader()
+			reader.onload = function (e) {
+				document.getElementById('previewImage').src = e.target.result
+			}
+			reader.readAsDataURL(file)
+		}
+	})
+
+//Form Wave animation
+document.addEventListener('DOMContentLoaded', () => {
+	const formControls = document.querySelectorAll('.form-control')
+
+	formControls.forEach((control) => {
+		const label = control.querySelector('label')
+		const input = control.querySelector('input, textarea')
+
+		if (label && input) {
+			const originalText = label.innerText // Stocke le texte original
+
+			// Transformer le label en une série de <span>
+			label.innerHTML = originalText
+				.split('')
+				.map(
+					(letter, index) =>
+						`<span style="--delay:${index * 60}ms">${letter}</span>`
+				)
+				.join('')
+
+			const spans = label.querySelectorAll('span')
+
+			input.addEventListener('focus', () => {
+				spans.forEach((span, index) => {
+					span.style.transitionDelay = `${index * 60}ms`
+					span.style.transform = 'translateY(-100%)'
+					span.style.fontSize = '14px'
+					span.style.color = '#155dfc'
+				})
+			})
+
+			input.addEventListener('blur', () => {
+				if (input.value === '') {
+					spans.forEach((span, index) => {
+						span.style.transitionDelay = `${index * 60}ms`
+						span.style.transform = 'translateY(0)'
+						span.style.fontSize = '16px'
+						span.style.color = '#9f9fa9'
+					})
+				}
+			})
+		}
+	})
+})
