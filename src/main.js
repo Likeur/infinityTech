@@ -207,3 +207,22 @@ document.getElementById("profileImage").addEventListener("change", function(even
         reader.readAsDataURL(file);
     }
 });
+
+// Pour l'adaptation de l'avatar dans edit-profil-info.html au darck mode
+function updateImage() {
+        const img = document.getElementById("previewImage");
+        if (document.documentElement.classList.contains("dark")) {
+			// Image pour le mode sombre
+            img.src = "../assets/avatar-dark.svg"; 
+        } else {
+			 // Image pour le mode clair
+            img.src = "../assets/avatar-light.svg";
+        }
+    }
+
+    // Vérifier et mettre à jour au chargement de la page
+    updateImage();
+
+    // Détecter le changement de mode sombre
+    const observer = new MutationObserver(updateImage);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
