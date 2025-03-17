@@ -1,9 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-body{
-    font-family: "Liter", serif;
+body {
+	font-family: 'Liter', serif;
+}
+
+/* Form wave animation */
+
+.form-control label span {
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+	transition-delay: var(--delay);
 }
