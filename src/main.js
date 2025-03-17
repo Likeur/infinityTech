@@ -184,31 +184,25 @@ document.addEventListener('DOMContentLoaded', () => {
 /******************** End Articles display management ***********************/
 
 // Gestion affichage de l'image dans edit-profil-info.html
-document
-	.getElementById('profileImage')
-	.addEventListener('change', function (event) {
-		const file = event.target.files[0]
-		if (file) {
-			const reader = new FileReader()
-			reader.onload = function (e) {
-				document.getElementById('previewImage').src = e.target.result
-			}
-			reader.readAsDataURL(file)
-		}
-	})
 
-document
-	.getElementById('profileImage')
-	.addEventListener('change', function (event) {
-		const file = event.target.files[0]
-		if (file) {
-			const reader = new FileReader()
-			reader.onload = function (e) {
-				document.getElementById('previewImage').src = e.target.result
+document.addEventListener('DOMContentLoaded', function () {
+	const profileImageInput = document.getElementById('profileImage')
+	if (profileImageInput) {
+		profileImageInput.addEventListener('change', function (event) {
+			const file = event.target.files[0]
+			if (file) {
+				const reader = new FileReader()
+				reader.onload = function (e) {
+					const preview = document.getElementById('previewImage')
+					if (preview) {
+						preview.src = e.target.result
+					}
+				}
+				reader.readAsDataURL(file)
 			}
-			reader.readAsDataURL(file)
-		}
-	})
+		})
+	}
+})
 
 //Form Wave animation
 document.addEventListener('DOMContentLoaded', () => {
@@ -220,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		if (label && input) {
 			const originalText = label.innerText // Stocke le texte original
-
+			console.log('Focused')
 			// Transformer le label en une série de <span>
 			label.innerHTML = originalText
 				.split('')
